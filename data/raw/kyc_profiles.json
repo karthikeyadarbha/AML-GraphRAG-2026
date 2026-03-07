@@ -1,0 +1,3302 @@
+[
+    {
+        "node_id": "LOOP_S_0",
+        "entity_name": "Rodriguez, Figueroa and Sanchez",
+        "jurisdiction": "Panama",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Brian Yang."
+    },
+    {
+        "node_id": "LOOP_S_1",
+        "entity_name": "Garza Inc",
+        "jurisdiction": "Cayman Islands",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Daniel Wagner."
+    },
+    {
+        "node_id": "LOOP_S_2",
+        "entity_name": "Gonzalez, Santos and Gardner",
+        "jurisdiction": "Cyprus",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Kevin Pacheco."
+    },
+    {
+        "node_id": "LOOP_S_3",
+        "entity_name": "Wolfe LLC",
+        "jurisdiction": "Panama",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Daniel Gallagher."
+    },
+    {
+        "node_id": "LOOP_S_4",
+        "entity_name": "James LLC",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Lindsey Roman."
+    },
+    {
+        "node_id": "LOOP_S_5",
+        "entity_name": "Herrera-Dudley",
+        "jurisdiction": "Panama",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Juan Calderon."
+    },
+    {
+        "node_id": "LOOP_S_6",
+        "entity_name": "Ray-Bush",
+        "jurisdiction": "Cyprus",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Darren Roberts."
+    },
+    {
+        "node_id": "LOOP_S_7",
+        "entity_name": "Delacruz Group",
+        "jurisdiction": "Panama",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Mark Diaz."
+    },
+    {
+        "node_id": "LOOP_S_8",
+        "entity_name": "Clark-Adams",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Maria Lynch."
+    },
+    {
+        "node_id": "LOOP_S_9",
+        "entity_name": "Daniel, Martin and Gray",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Margaret Hawkins DDS."
+    },
+    {
+        "node_id": "LOOP_S_10",
+        "entity_name": "Perez Inc",
+        "jurisdiction": "Panama",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Jennifer Jones."
+    },
+    {
+        "node_id": "LOOP_S_11",
+        "entity_name": "Walter, Edwards and Rios",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Thomas Ellis."
+    },
+    {
+        "node_id": "LOOP_S_12",
+        "entity_name": "Wright PLC",
+        "jurisdiction": "Cayman Islands",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Nicole Patterson."
+    },
+    {
+        "node_id": "LOOP_S_13",
+        "entity_name": "Cox-Osborn",
+        "jurisdiction": "Cyprus",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Johnny Campos."
+    },
+    {
+        "node_id": "LOOP_S_14",
+        "entity_name": "Hernandez and Sons",
+        "jurisdiction": "Panama",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Jennifer Brown."
+    },
+    {
+        "node_id": "LOOP_S_15",
+        "entity_name": "Ferrell, Rice and Maddox",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Alexandra Le."
+    },
+    {
+        "node_id": "LOOP_S_16",
+        "entity_name": "Potter, Mack and Peterson",
+        "jurisdiction": "Cayman Islands",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Christopher Smith."
+    },
+    {
+        "node_id": "LOOP_S_17",
+        "entity_name": "Baker, Mason and White",
+        "jurisdiction": "Cayman Islands",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Sheila Evans."
+    },
+    {
+        "node_id": "LOOP_S_18",
+        "entity_name": "Lynch, Hernandez and Farmer",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Paula Moreno."
+    },
+    {
+        "node_id": "LOOP_S_19",
+        "entity_name": "Nguyen, Smith and Hickman",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Sandra Parker."
+    },
+    {
+        "node_id": "LOOP_S_20",
+        "entity_name": "Humphrey Inc",
+        "jurisdiction": "Cayman Islands",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner John Jones."
+    },
+    {
+        "node_id": "LOOP_S_21",
+        "entity_name": "Cannon, Anderson and Alvarez",
+        "jurisdiction": "Cyprus",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Deborah Brennan."
+    },
+    {
+        "node_id": "LOOP_S_22",
+        "entity_name": "Hickman Ltd",
+        "jurisdiction": "Panama",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Michelle Ross."
+    },
+    {
+        "node_id": "LOOP_S_23",
+        "entity_name": "Brooks, Lam and Hayes",
+        "jurisdiction": "Cayman Islands",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Austin Smith."
+    },
+    {
+        "node_id": "LOOP_S_24",
+        "entity_name": "Chapman Inc",
+        "jurisdiction": "Cyprus",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Mark Perez."
+    },
+    {
+        "node_id": "LOOP_S_25",
+        "entity_name": "Heath Inc",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Diana Washington."
+    },
+    {
+        "node_id": "LOOP_S_26",
+        "entity_name": "Cummings PLC",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Dana Kennedy."
+    },
+    {
+        "node_id": "LOOP_S_27",
+        "entity_name": "Davis Ltd",
+        "jurisdiction": "Cyprus",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Jeff Owens."
+    },
+    {
+        "node_id": "LOOP_S_28",
+        "entity_name": "Nunez Ltd",
+        "jurisdiction": "Cayman Islands",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner James Morgan."
+    },
+    {
+        "node_id": "LOOP_S_29",
+        "entity_name": "Wright and Sons",
+        "jurisdiction": "Cayman Islands",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Brenda White."
+    },
+    {
+        "node_id": "LOOP_S_30",
+        "entity_name": "Baxter Inc",
+        "jurisdiction": "Cyprus",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Scott Pierce."
+    },
+    {
+        "node_id": "LOOP_S_31",
+        "entity_name": "Kidd, Huff and Novak",
+        "jurisdiction": "Cyprus",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Sarah Martin."
+    },
+    {
+        "node_id": "LOOP_S_32",
+        "entity_name": "Lewis-Morales",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner James Galloway."
+    },
+    {
+        "node_id": "LOOP_S_33",
+        "entity_name": "Mitchell-Horton",
+        "jurisdiction": "Cyprus",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Rachel Stanley."
+    },
+    {
+        "node_id": "LOOP_S_34",
+        "entity_name": "Lee and Sons",
+        "jurisdiction": "Panama",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Lauren Daniels."
+    },
+    {
+        "node_id": "LOOP_S_35",
+        "entity_name": "Brown-Silva",
+        "jurisdiction": "Panama",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Sarah Moore."
+    },
+    {
+        "node_id": "LOOP_S_36",
+        "entity_name": "York Inc",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Megan Young."
+    },
+    {
+        "node_id": "LOOP_S_37",
+        "entity_name": "Sanchez, Wheeler and Harvey",
+        "jurisdiction": "Panama",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Kevin Mills."
+    },
+    {
+        "node_id": "LOOP_S_38",
+        "entity_name": "Harris-Moran",
+        "jurisdiction": "Cayman Islands",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner James Powers."
+    },
+    {
+        "node_id": "LOOP_S_39",
+        "entity_name": "Stewart-Walton",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Jimmy Murillo."
+    },
+    {
+        "node_id": "LOOP_S_40",
+        "entity_name": "Medina PLC",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Timothy Ibarra."
+    },
+    {
+        "node_id": "LOOP_S_41",
+        "entity_name": "Wood and Sons",
+        "jurisdiction": "Cayman Islands",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Joshua Turner."
+    },
+    {
+        "node_id": "LOOP_S_42",
+        "entity_name": "Rice, Contreras and Spencer",
+        "jurisdiction": "Cyprus",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Ashley Humphrey."
+    },
+    {
+        "node_id": "LOOP_S_43",
+        "entity_name": "Preston Ltd",
+        "jurisdiction": "Seychelles",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Denise Jacobs."
+    },
+    {
+        "node_id": "LOOP_S_44",
+        "entity_name": "Harris-Walters",
+        "jurisdiction": "Cayman Islands",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner John Whitehead."
+    },
+    {
+        "node_id": "LOOP_S_45",
+        "entity_name": "Davis Group",
+        "jurisdiction": "Cyprus",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Amanda Cook."
+    },
+    {
+        "node_id": "LOOP_S_46",
+        "entity_name": "Whitney, Martin and Ramos",
+        "jurisdiction": "Panama",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Kristina Rodriguez."
+    },
+    {
+        "node_id": "LOOP_S_47",
+        "entity_name": "Mckee, Gardner and Davenport",
+        "jurisdiction": "Panama",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Brittany Anderson."
+    },
+    {
+        "node_id": "LOOP_S_48",
+        "entity_name": "Nolan-Flynn",
+        "jurisdiction": "Cyprus",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Stephanie Clark."
+    },
+    {
+        "node_id": "LOOP_S_49",
+        "entity_name": "Garcia, Deleon and Henson",
+        "jurisdiction": "Panama",
+        "investigator_notes": "High frequency circular transfers detected. Linked to beneficial owner Marc Moore."
+    },
+    {
+        "node_id": "CUST_0",
+        "entity_name": "Christopher Marsh",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_1",
+        "entity_name": "Jason White",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_2",
+        "entity_name": "Rachel Jenkins",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_3",
+        "entity_name": "Nancy Wright",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_4",
+        "entity_name": "Michael Reyes",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_5",
+        "entity_name": "John Gonzalez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_6",
+        "entity_name": "Hannah Hoover",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_7",
+        "entity_name": "Courtney Keller",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_8",
+        "entity_name": "Donald Jones",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_9",
+        "entity_name": "Heather Hicks",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_10",
+        "entity_name": "Sarah Rivera",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_11",
+        "entity_name": "Shawn Green",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_12",
+        "entity_name": "Victoria Johnson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_13",
+        "entity_name": "Haley Hartman",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_14",
+        "entity_name": "William Wilson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_15",
+        "entity_name": "Cheryl Williams",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_16",
+        "entity_name": "Joseph Drake",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_17",
+        "entity_name": "Teresa Mclaughlin",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_18",
+        "entity_name": "Jeffrey Rush",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_19",
+        "entity_name": "Lisa Alvarado",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_20",
+        "entity_name": "Steven Hunter",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_21",
+        "entity_name": "Erika Terry",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_22",
+        "entity_name": "Cheryl Ortega",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_23",
+        "entity_name": "Paul Thompson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_24",
+        "entity_name": "Jennifer Bass",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_25",
+        "entity_name": "Daniel Floyd",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_26",
+        "entity_name": "Erica Ramos",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_27",
+        "entity_name": "Kayla Leon",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_28",
+        "entity_name": "Nancy Hopkins",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_29",
+        "entity_name": "Matthew Harvey",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_30",
+        "entity_name": "Trevor Young",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_31",
+        "entity_name": "Robert Hernandez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_32",
+        "entity_name": "William Carr",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_33",
+        "entity_name": "Joy Mercado",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_34",
+        "entity_name": "Michelle Cruz",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_35",
+        "entity_name": "Charles Watts",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_36",
+        "entity_name": "Shannon Mcclure",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_37",
+        "entity_name": "Colleen Brock",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_38",
+        "entity_name": "Julie Grant",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_39",
+        "entity_name": "Barbara Anderson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_40",
+        "entity_name": "Joseph Hansen",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_41",
+        "entity_name": "Pedro Ramos",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_42",
+        "entity_name": "Stephanie Simmons",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_43",
+        "entity_name": "Jill Moore",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_44",
+        "entity_name": "Joanna Walton",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_45",
+        "entity_name": "Destiny Strickland",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_46",
+        "entity_name": "Mr. Jeremiah Reeves",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_47",
+        "entity_name": "George Orozco",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_48",
+        "entity_name": "Chris Reyes",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_49",
+        "entity_name": "Daniel Perry",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_50",
+        "entity_name": "John Brown",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_51",
+        "entity_name": "Jean Carrillo",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_52",
+        "entity_name": "Alicia Gilmore",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_53",
+        "entity_name": "Karen Bender",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_54",
+        "entity_name": "James Snow",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_55",
+        "entity_name": "Kimberly Navarro",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_56",
+        "entity_name": "Stephanie Freeman",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_57",
+        "entity_name": "John Price",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_58",
+        "entity_name": "Rebecca Ramsey",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_59",
+        "entity_name": "Tamara Hooper",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_60",
+        "entity_name": "Susan Vargas",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_61",
+        "entity_name": "Angela Patterson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_62",
+        "entity_name": "Catherine Green",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_63",
+        "entity_name": "Jesse Rogers",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_64",
+        "entity_name": "Diana Bean",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_65",
+        "entity_name": "Ruben Ruiz",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_66",
+        "entity_name": "Amy Crane",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_67",
+        "entity_name": "Barry Bernard",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_68",
+        "entity_name": "Andre Wright",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_69",
+        "entity_name": "Lisa Allen",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_70",
+        "entity_name": "Brian Gould",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_71",
+        "entity_name": "David Wood",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_72",
+        "entity_name": "Tracey Higgins",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_73",
+        "entity_name": "Carla Collins",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_74",
+        "entity_name": "Tanya Johnston",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_75",
+        "entity_name": "Jaime David",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_76",
+        "entity_name": "Kevin Rivas",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_77",
+        "entity_name": "Michael Turner",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_78",
+        "entity_name": "Renee Hogan",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_79",
+        "entity_name": "Amanda Patel",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_80",
+        "entity_name": "Andrea Holland",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_81",
+        "entity_name": "Jason Henry",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_82",
+        "entity_name": "Jack Snow",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_83",
+        "entity_name": "Christian Thompson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_84",
+        "entity_name": "Marie Gilbert",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_85",
+        "entity_name": "Patricia Marshall",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_86",
+        "entity_name": "Leslie Morris",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_87",
+        "entity_name": "Timothy Ramirez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_88",
+        "entity_name": "Paul Hudson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_89",
+        "entity_name": "Gabrielle Snyder",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_90",
+        "entity_name": "John Kelly",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_91",
+        "entity_name": "Douglas Carlson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_92",
+        "entity_name": "Kristi Black",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_93",
+        "entity_name": "David Russell",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_94",
+        "entity_name": "Cynthia Alvarez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_95",
+        "entity_name": "Joan Smith",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_96",
+        "entity_name": "Jared Sanchez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_97",
+        "entity_name": "Jackie Tran",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_98",
+        "entity_name": "Zachary Pierce",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_99",
+        "entity_name": "Jesse Parker",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_100",
+        "entity_name": "Nathan Stewart",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_101",
+        "entity_name": "Tiffany Vaughn",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_102",
+        "entity_name": "Parker Hill",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_103",
+        "entity_name": "Paige Carlson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_104",
+        "entity_name": "Dr. Elizabeth Ward",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_105",
+        "entity_name": "Michael Martinez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_106",
+        "entity_name": "Anthony Carter",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_107",
+        "entity_name": "Margaret Mullins",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_108",
+        "entity_name": "Adam Mitchell",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_109",
+        "entity_name": "Glen Sheppard",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_110",
+        "entity_name": "Scott Wilson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_111",
+        "entity_name": "John Ray",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_112",
+        "entity_name": "Brittany Shepherd",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_113",
+        "entity_name": "Angela Wright",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_114",
+        "entity_name": "Jennifer Carlson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_115",
+        "entity_name": "Patricia James",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_116",
+        "entity_name": "Elizabeth Chapman",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_117",
+        "entity_name": "Keith Brown",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_118",
+        "entity_name": "Annette Farmer",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_119",
+        "entity_name": "Deborah Miller",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_120",
+        "entity_name": "Juan Moore",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_121",
+        "entity_name": "Michael Harrison",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_122",
+        "entity_name": "Dwayne Campbell",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_123",
+        "entity_name": "Andrea Hall",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_124",
+        "entity_name": "Rick Lawrence",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_125",
+        "entity_name": "Christina Wilson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_126",
+        "entity_name": "Chase Baker",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_127",
+        "entity_name": "Anthony Sparks",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_128",
+        "entity_name": "Samantha Morse",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_129",
+        "entity_name": "John Torres",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_130",
+        "entity_name": "Dillon Fernandez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_131",
+        "entity_name": "Kyle Preston",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_132",
+        "entity_name": "Lindsey Johnson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_133",
+        "entity_name": "Michael Valencia",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_134",
+        "entity_name": "Alicia Hubbard",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_135",
+        "entity_name": "Laura Hines",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_136",
+        "entity_name": "Joseph Ramos",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_137",
+        "entity_name": "Zachary Graham",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_138",
+        "entity_name": "Tracy Harrison",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_139",
+        "entity_name": "Frank Garcia",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_140",
+        "entity_name": "Jason Simpson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_141",
+        "entity_name": "Jennifer Hodges",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_142",
+        "entity_name": "Brandon King",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_143",
+        "entity_name": "Raymond Hancock",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_144",
+        "entity_name": "April Booth",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_145",
+        "entity_name": "Anthony Stone",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_146",
+        "entity_name": "Kathleen Ramos",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_147",
+        "entity_name": "Derek Anderson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_148",
+        "entity_name": "Stanley Washington",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_149",
+        "entity_name": "Mark Lloyd",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_150",
+        "entity_name": "Emily Smith",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_151",
+        "entity_name": "Danny Skinner",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_152",
+        "entity_name": "Travis Holland",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_153",
+        "entity_name": "Timothy Carter",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_154",
+        "entity_name": "Jennifer Olson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_155",
+        "entity_name": "Jesus Thomas",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_156",
+        "entity_name": "Kyle Francis",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_157",
+        "entity_name": "Benjamin Barton",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_158",
+        "entity_name": "Gina French",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_159",
+        "entity_name": "Aaron Barber",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_160",
+        "entity_name": "Lauren Keller",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_161",
+        "entity_name": "Jill Washington",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_162",
+        "entity_name": "Phillip Bennett",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_163",
+        "entity_name": "Sheila Pollard",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_164",
+        "entity_name": "James Chase",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_165",
+        "entity_name": "Evan Kennedy",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_166",
+        "entity_name": "Jane Mcneil",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_167",
+        "entity_name": "Marissa Hernandez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_168",
+        "entity_name": "Beth Sanford",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_169",
+        "entity_name": "Brian Kirk",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_170",
+        "entity_name": "Thomas Smith",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_171",
+        "entity_name": "Seth Booker",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_172",
+        "entity_name": "Richard Baker",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_173",
+        "entity_name": "Jennifer Miller",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_174",
+        "entity_name": "Michael Ferguson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_175",
+        "entity_name": "Lori Clay",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_176",
+        "entity_name": "Joshua Williamson II",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_177",
+        "entity_name": "Donna Perez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_178",
+        "entity_name": "William Hodges",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_179",
+        "entity_name": "Ashlee Jackson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_180",
+        "entity_name": "Allen Nguyen",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_181",
+        "entity_name": "Ian Jordan",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_182",
+        "entity_name": "Jason Maldonado",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_183",
+        "entity_name": "Christopher Lynch",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_184",
+        "entity_name": "Michael Jimenez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_185",
+        "entity_name": "Crystal Little",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_186",
+        "entity_name": "Michael Nolan",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_187",
+        "entity_name": "Dwayne Payne",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_188",
+        "entity_name": "Tony Huerta",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_189",
+        "entity_name": "Victor Vaughn",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_190",
+        "entity_name": "Eric Kidd",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_191",
+        "entity_name": "Ashley James",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_192",
+        "entity_name": "Edward Lyons",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_193",
+        "entity_name": "Ronald Foster",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_194",
+        "entity_name": "Sean Osborne",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_195",
+        "entity_name": "Susan Mcgee",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_196",
+        "entity_name": "Stephanie Parsons",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_197",
+        "entity_name": "Robert Robinson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_198",
+        "entity_name": "David Campos",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_199",
+        "entity_name": "Melanie Taylor",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_200",
+        "entity_name": "Mark Williams",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_201",
+        "entity_name": "Amanda Diaz",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_202",
+        "entity_name": "Theodore Murphy",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_203",
+        "entity_name": "Curtis Buchanan",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_204",
+        "entity_name": "Holly Shaw",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_205",
+        "entity_name": "Christopher Sloan",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_206",
+        "entity_name": "Tracy Phillips",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_207",
+        "entity_name": "Regina Mcdonald",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_208",
+        "entity_name": "Paul Perez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_209",
+        "entity_name": "Megan Sanders",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_210",
+        "entity_name": "Kristin Davis",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_211",
+        "entity_name": "Dennis Martinez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_212",
+        "entity_name": "Paul Baker",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_213",
+        "entity_name": "Mark Watson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_214",
+        "entity_name": "Kaitlyn Harvey",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_215",
+        "entity_name": "Erin Bishop",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_216",
+        "entity_name": "Madison Marshall",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_217",
+        "entity_name": "Marie Wilson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_218",
+        "entity_name": "Andrew Ferrell",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_219",
+        "entity_name": "David Medina",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_220",
+        "entity_name": "Jacob Avery",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_221",
+        "entity_name": "Kimberly Matthews",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_222",
+        "entity_name": "Stacey Pena",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_223",
+        "entity_name": "Lisa Crosby",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_224",
+        "entity_name": "Michael Robinson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_225",
+        "entity_name": "David Cox",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_226",
+        "entity_name": "Mrs. Stephanie Newman",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_227",
+        "entity_name": "Donald Donaldson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_228",
+        "entity_name": "Samantha Davis",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_229",
+        "entity_name": "Mark Maddox",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_230",
+        "entity_name": "Gavin Zhang",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_231",
+        "entity_name": "Christine Gallegos",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_232",
+        "entity_name": "Laurie Li",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_233",
+        "entity_name": "Raymond Kramer",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_234",
+        "entity_name": "Destiny Riggs",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_235",
+        "entity_name": "Ms. Rebecca Rodriguez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_236",
+        "entity_name": "Bonnie Howard",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_237",
+        "entity_name": "Leah Smith",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_238",
+        "entity_name": "Cameron Fisher",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_239",
+        "entity_name": "Arthur West",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_240",
+        "entity_name": "Kevin Hayes",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_241",
+        "entity_name": "Luis Acosta",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_242",
+        "entity_name": "Mary Turner",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_243",
+        "entity_name": "Amanda Lutz",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_244",
+        "entity_name": "Jessica Rodriguez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_245",
+        "entity_name": "Jill Lam",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_246",
+        "entity_name": "Charles Martinez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_247",
+        "entity_name": "Lauren Joseph",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_248",
+        "entity_name": "Kyle Phillips",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_249",
+        "entity_name": "Jessica Mcguire",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_250",
+        "entity_name": "Matthew Rich",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_251",
+        "entity_name": "Sharon Jordan",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_252",
+        "entity_name": "Jennifer Wilcox",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_253",
+        "entity_name": "Nicholas Edwards",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_254",
+        "entity_name": "David Mckay",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_255",
+        "entity_name": "Kara Davis",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_256",
+        "entity_name": "Jeffrey Garner",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_257",
+        "entity_name": "Carlos Brown",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_258",
+        "entity_name": "Kristina Santiago",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_259",
+        "entity_name": "Shane Pugh",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_260",
+        "entity_name": "Thomas Williams",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_261",
+        "entity_name": "Erik Garcia",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_262",
+        "entity_name": "Brittney Olson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_263",
+        "entity_name": "Hayley Hawkins",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_264",
+        "entity_name": "Donald Perez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_265",
+        "entity_name": "Justin Saunders",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_266",
+        "entity_name": "Megan Hawkins",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_267",
+        "entity_name": "Mary Steele",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_268",
+        "entity_name": "Donald Farmer",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_269",
+        "entity_name": "Heather White",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_270",
+        "entity_name": "Matthew Jones",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_271",
+        "entity_name": "Valerie Davis",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_272",
+        "entity_name": "Jamie Chavez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_273",
+        "entity_name": "Eric Nguyen",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_274",
+        "entity_name": "Linda Ware",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_275",
+        "entity_name": "Paul Williams",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_276",
+        "entity_name": "Jeremy Coleman",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_277",
+        "entity_name": "Jennifer Lewis",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_278",
+        "entity_name": "Haley Rodriguez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_279",
+        "entity_name": "Leslie Rose",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_280",
+        "entity_name": "Daniel Joyce",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_281",
+        "entity_name": "Dan Dougherty",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_282",
+        "entity_name": "Pamela Roberts",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_283",
+        "entity_name": "Jonathan Jordan",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_284",
+        "entity_name": "Joseph Hall",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_285",
+        "entity_name": "Mary Gomez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_286",
+        "entity_name": "Patrick Graham",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_287",
+        "entity_name": "Blake Edwards",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_288",
+        "entity_name": "Jared Bowman",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_289",
+        "entity_name": "Jared Burch",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_290",
+        "entity_name": "Travis Stevens",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_291",
+        "entity_name": "Heidi Kim",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_292",
+        "entity_name": "Jeffrey Morales",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_293",
+        "entity_name": "Seth Reese",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_294",
+        "entity_name": "Richard Jones",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_295",
+        "entity_name": "Kerry Lee",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_296",
+        "entity_name": "Heather Mullen",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_297",
+        "entity_name": "Brittany Garcia",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_298",
+        "entity_name": "Christopher Hernandez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_299",
+        "entity_name": "Angela Bean",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_300",
+        "entity_name": "Julie Elliott",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_301",
+        "entity_name": "Melanie Macias",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_302",
+        "entity_name": "Victoria Morris",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_303",
+        "entity_name": "Emily Gonzales",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_304",
+        "entity_name": "Mark Hogan",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_305",
+        "entity_name": "Heather Jones",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_306",
+        "entity_name": "Andrew Wood",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_307",
+        "entity_name": "Matthew Madden",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_308",
+        "entity_name": "Kirk Cruz",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_309",
+        "entity_name": "Tiffany Stevenson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_310",
+        "entity_name": "Terry Armstrong",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_311",
+        "entity_name": "Larry Mason",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_312",
+        "entity_name": "Joanna Shepherd",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_313",
+        "entity_name": "Vickie Miller",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_314",
+        "entity_name": "Amanda Zimmerman",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_315",
+        "entity_name": "Kelly Bishop MD",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_316",
+        "entity_name": "Jasmine Schroeder",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_317",
+        "entity_name": "Amy Mccoy",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_318",
+        "entity_name": "Gary Grant",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_319",
+        "entity_name": "David York",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_320",
+        "entity_name": "Lindsey Hernandez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_321",
+        "entity_name": "Matthew Rangel",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_322",
+        "entity_name": "Matthew Bates",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_323",
+        "entity_name": "Michael Miller",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_324",
+        "entity_name": "Maria Murphy",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_325",
+        "entity_name": "Michael Valentine",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_326",
+        "entity_name": "Susan Davis DDS",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_327",
+        "entity_name": "Alicia Parker",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_328",
+        "entity_name": "Gloria Miranda",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_329",
+        "entity_name": "Zachary Moore",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_330",
+        "entity_name": "Richard Romero",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_331",
+        "entity_name": "Nancy Rose",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_332",
+        "entity_name": "Sherri Williamson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_333",
+        "entity_name": "Brittany White",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_334",
+        "entity_name": "Lori Orr",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_335",
+        "entity_name": "Amanda Diaz",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_336",
+        "entity_name": "Tracy Bishop",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_337",
+        "entity_name": "Rachel Young",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_338",
+        "entity_name": "Vincent Mueller",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_339",
+        "entity_name": "Cheyenne Gregory",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_340",
+        "entity_name": "Jessica Hammond",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_341",
+        "entity_name": "Kathryn Barnes",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_342",
+        "entity_name": "Curtis Jacobs",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_343",
+        "entity_name": "Amy Castillo",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_344",
+        "entity_name": "Timothy Dawson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_345",
+        "entity_name": "Belinda Miller",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_346",
+        "entity_name": "Jerry Palmer",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_347",
+        "entity_name": "Anna Lozano",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_348",
+        "entity_name": "Stacey Arias",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_349",
+        "entity_name": "James Brooks",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_350",
+        "entity_name": "Brad Walker",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_351",
+        "entity_name": "Brett Espinoza",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_352",
+        "entity_name": "Charles Johnson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_353",
+        "entity_name": "Kaitlyn Guerra",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_354",
+        "entity_name": "Julie Gilbert",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_355",
+        "entity_name": "Alicia Lewis",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_356",
+        "entity_name": "Todd Lynch",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_357",
+        "entity_name": "Ricardo Young",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_358",
+        "entity_name": "David Fowler",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_359",
+        "entity_name": "Amy Copeland",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_360",
+        "entity_name": "Mr. Mark Andrews DDS",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_361",
+        "entity_name": "Aaron Gomez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_362",
+        "entity_name": "Chelsea Barnett",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_363",
+        "entity_name": "Heather Ashley",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_364",
+        "entity_name": "Rachel Romero",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_365",
+        "entity_name": "Shane Williams",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_366",
+        "entity_name": "James Burgess",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_367",
+        "entity_name": "Austin Allen",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_368",
+        "entity_name": "Ashley Perkins",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_369",
+        "entity_name": "Brandi Bell",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_370",
+        "entity_name": "Marvin Greer",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_371",
+        "entity_name": "Veronica Mendoza",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_372",
+        "entity_name": "Chad Baldwin",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_373",
+        "entity_name": "Amanda Harris",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_374",
+        "entity_name": "Stacey Stewart",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_375",
+        "entity_name": "James Ochoa",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_376",
+        "entity_name": "Andrew Lucas",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_377",
+        "entity_name": "Scott Williams",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_378",
+        "entity_name": "Denise Lloyd",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_379",
+        "entity_name": "James Gonzales",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_380",
+        "entity_name": "Gina Lopez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_381",
+        "entity_name": "Holly Salinas",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_382",
+        "entity_name": "Bradley Coleman",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_383",
+        "entity_name": "Zachary White",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_384",
+        "entity_name": "Brian Murphy",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_385",
+        "entity_name": "Jeremy Robbins",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_386",
+        "entity_name": "Jeremy West",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_387",
+        "entity_name": "Susan Mendez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_388",
+        "entity_name": "Mark Moody",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_389",
+        "entity_name": "Michael Sullivan",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_390",
+        "entity_name": "Nicole Moore",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_391",
+        "entity_name": "Samuel Gregory",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_392",
+        "entity_name": "Cameron Young",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_393",
+        "entity_name": "Heidi Herring",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_394",
+        "entity_name": "Christian Cole",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_395",
+        "entity_name": "Jeremy Jones",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_396",
+        "entity_name": "Jacob Edwards",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_397",
+        "entity_name": "Tyler Johnson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_398",
+        "entity_name": "Joseph Mcintyre",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_399",
+        "entity_name": "Reginald Padilla",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_400",
+        "entity_name": "Logan Benson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_401",
+        "entity_name": "Mrs. Brandy Jones MD",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_402",
+        "entity_name": "Yolanda Cochran",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_403",
+        "entity_name": "Victoria Contreras",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_404",
+        "entity_name": "Krista Roberts",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_405",
+        "entity_name": "Christopher Mckinney",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_406",
+        "entity_name": "Carrie Ward",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_407",
+        "entity_name": "William Conner",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_408",
+        "entity_name": "Johnny Ward",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_409",
+        "entity_name": "Julie Bird",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_410",
+        "entity_name": "Stephen Jones",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_411",
+        "entity_name": "Mitchell Mendoza",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_412",
+        "entity_name": "Jason Andrews",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_413",
+        "entity_name": "Evan Jones",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_414",
+        "entity_name": "Joseph Anderson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_415",
+        "entity_name": "Kristen Matthews",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_416",
+        "entity_name": "Betty Shaw",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_417",
+        "entity_name": "Sandra Holmes",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_418",
+        "entity_name": "Christopher Donovan",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_419",
+        "entity_name": "Travis Stone",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_420",
+        "entity_name": "Blake Gonzalez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_421",
+        "entity_name": "Denise Weber",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_422",
+        "entity_name": "Anna Davidson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_423",
+        "entity_name": "Lauren Jackson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_424",
+        "entity_name": "Stephanie Morgan",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_425",
+        "entity_name": "Amanda Shields",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_426",
+        "entity_name": "Travis Wise",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_427",
+        "entity_name": "Daniel Armstrong",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_428",
+        "entity_name": "Amanda Small",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_429",
+        "entity_name": "Maria Turner",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_430",
+        "entity_name": "Robert Sullivan",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_431",
+        "entity_name": "Michael Moore",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_432",
+        "entity_name": "John Peterson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_433",
+        "entity_name": "Scott Flores",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_434",
+        "entity_name": "Haley Ross PhD",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_435",
+        "entity_name": "Ashley Allen",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_436",
+        "entity_name": "Jerry Thomas",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_437",
+        "entity_name": "Tony Lin",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_438",
+        "entity_name": "Victor Barrera",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_439",
+        "entity_name": "Taylor Griffith",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_440",
+        "entity_name": "Christopher Ferrell",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_441",
+        "entity_name": "Shawn Jimenez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_442",
+        "entity_name": "James Bryant",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_443",
+        "entity_name": "Kevin Williams",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_444",
+        "entity_name": "Kyle Cameron",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_445",
+        "entity_name": "Donna Smith",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_446",
+        "entity_name": "Cesar Baker",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_447",
+        "entity_name": "Jamie Williams",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_448",
+        "entity_name": "Justin Cox",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_449",
+        "entity_name": "James Cole",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_450",
+        "entity_name": "Samantha Hanson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_451",
+        "entity_name": "Betty Davis",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_452",
+        "entity_name": "William Grant",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_453",
+        "entity_name": "Charles Morrison",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_454",
+        "entity_name": "Andrew Williams",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_455",
+        "entity_name": "Regina Stone",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_456",
+        "entity_name": "Steven Taylor",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_457",
+        "entity_name": "Emily Long",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_458",
+        "entity_name": "Sarah Wheeler",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_459",
+        "entity_name": "Katrina Burns",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_460",
+        "entity_name": "Karen Smith",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_461",
+        "entity_name": "Brian Butler",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_462",
+        "entity_name": "Steven Wiggins",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_463",
+        "entity_name": "Linda Baker",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_464",
+        "entity_name": "Valerie Lane",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_465",
+        "entity_name": "Anthony Castillo",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_466",
+        "entity_name": "Michelle Hampton",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_467",
+        "entity_name": "Roberto Allen",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_468",
+        "entity_name": "Melody Lee",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_469",
+        "entity_name": "Jason Gutierrez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_470",
+        "entity_name": "Jonathan Carr",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_471",
+        "entity_name": "Ryan Luna",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_472",
+        "entity_name": "Kelly Hoffman",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_473",
+        "entity_name": "Mrs. Jamie Frye DDS",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_474",
+        "entity_name": "Kimberly Lowe",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_475",
+        "entity_name": "Melanie Lara",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_476",
+        "entity_name": "John Bernard",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_477",
+        "entity_name": "Edwin David",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_478",
+        "entity_name": "Dr. Michele Vaughn",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_479",
+        "entity_name": "John Castro DVM",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_480",
+        "entity_name": "Donna Berry",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_481",
+        "entity_name": "Stephanie Foster",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_482",
+        "entity_name": "Raymond Thomas",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_483",
+        "entity_name": "Tyler Miller",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_484",
+        "entity_name": "Mary Burgess",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_485",
+        "entity_name": "Ronald Nelson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_486",
+        "entity_name": "Denise Rodriguez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_487",
+        "entity_name": "Cynthia Williams",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_488",
+        "entity_name": "Courtney Hall",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_489",
+        "entity_name": "Gary Kennedy",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_490",
+        "entity_name": "Brenda Oconnell",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_491",
+        "entity_name": "Brooke Delgado",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_492",
+        "entity_name": "Karen Santos",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_493",
+        "entity_name": "Donna Mitchell",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_494",
+        "entity_name": "Randy Pearson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_495",
+        "entity_name": "Parker Jefferson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_496",
+        "entity_name": "Thomas Butler",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_497",
+        "entity_name": "Taylor Johnson",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_498",
+        "entity_name": "Rachel Lopez",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    },
+    {
+        "node_id": "CUST_499",
+        "entity_name": "Shelia Roberts",
+        "jurisdiction": "United Kingdom",
+        "investigator_notes": "Retail account. Low risk profile."
+    }
+]

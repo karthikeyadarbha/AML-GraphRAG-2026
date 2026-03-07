@@ -1,0 +1,6 @@
+duckdb==1.4.4
+Faker==40.8.0
+numpy==2.4.2
+pandas==3.0.1
+pyarrow==23.0.1
+python-dateutil==2.9.0.post0
