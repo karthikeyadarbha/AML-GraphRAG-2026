@@ -15,7 +15,14 @@ if curl -fsS "$OLLAMA_API_URL" >/dev/null 2>&1; then
 else
   echo "Starting Ollama server in the background..."
   nohup ollama serve >/tmp/ollama.log 2>&1 &
-  sleep 2
+
+  for _ in $(seq 1 30); do
+    if curl -fsS "$OLLAMA_API_URL" >/dev/null 2>&1; then
+      break
+    fi
+
+    sleep 1
+  done
 
   if ! curl -fsS "$OLLAMA_API_URL" >/dev/null 2>&1; then
     echo "Error: Ollama server did not become ready."

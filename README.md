@@ -84,7 +84,7 @@ Plaintext
 
 ## Local LLM Prerequisite (Ollama)
 
-The adjudication workflow (`scripts/execute_adjudication_agent.py`) calls a local Ollama API at `http://localhost:11434` using the `mistral` model.
+The adjudication workflow (`scripts/execute_adjudication_agent.py`) calls a local Ollama API at `http://127.0.0.1:11434` using the `mistral` model by default. You can override this with the `OLLAMA_API_URL` environment variable if your Ollama instance is exposed elsewhere.
 
 Use this helper before running adjudication (especially in a new shell/session):
 
