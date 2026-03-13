@@ -86,6 +86,19 @@ Plaintext
 
 The adjudication workflow (`scripts/execute_adjudication_agent.py`) calls a local Ollama API at `http://127.0.0.1:11434` using the `mistral` model by default. You can override this with the `OLLAMA_API_URL` environment variable if your Ollama instance is exposed elsewhere.
 
+Runtime tuning (recommended for slow cold starts):
+
+- `OLLAMA_TIMEOUT_SECONDS` (default: `240`): Read timeout for a single generation call.
+- `OLLAMA_MAX_RETRIES` (default: `2`): Number of retries when generation times out.
+
+Example:
+
+```bash
+export OLLAMA_API_URL="http://127.0.0.1:11434/api/generate"
+export OLLAMA_TIMEOUT_SECONDS=300
+export OLLAMA_MAX_RETRIES=3
+```
+
 Use this helper before running adjudication (especially in a new shell/session):
 
 ```bash

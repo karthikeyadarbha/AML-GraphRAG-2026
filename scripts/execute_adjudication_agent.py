@@ -3,6 +3,7 @@ import logging
 import os
 import shutil
 import tempfile
+import time
 from pathlib import Path
 
 import duckdb
@@ -16,14 +17,17 @@ DATA_DIR = Path("data/raw")
 PROCESSED_DIR = Path("data/processed")
 DB_PATH = PROCESSED_DIR / "argus_research.db"
 INDEX_PATH = PROCESSED_DIR / "vector_index.faiss"
-METADATA_PATH = PROCESSED_DIR / "vector_metadata.json"
+NEWS_PATH = DATA_DIR / "adverse_media.json"
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 OLLAMA_API_URL = os.getenv("OLLAMA_API_URL", "http://127.0.0.1:11434/api/generate")
+OLLAMA_TIMEOUT_SECONDS = int(os.getenv("OLLAMA_TIMEOUT_SECONDS", "240"))
+OLLAMA_MAX_RETRIES = int(os.getenv("OLLAMA_MAX_RETRIES", "2"))
 
-# Initialize the embedding model to match the FAISS index
+# Initialize the embedding model
 model = SentenceTransformer('all-MiniLM-L6-v2')
+##model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
 
 def extract_structural_evidence(con: duckdb.DuckDBPyConnection) -> dict:
     """
@@ -139,29 +143,60 @@ def retrieve_lexical_context(con: duckdb.DuckDBPyConnection, node_id: str) -> di
         "internal_notes": result[2]
     } if result else {}
 
-def retrieve_semantic_context(query_text: str, k: int = 1) -> str:
-    """Retrieves relevant adverse media using FAISS vector search."""
-    logger.info("Performing semantic vector search for motive discovery...")
+def retrieve_semantic_context(con: duckdb.DuckDBPyConnection, query_text: str) -> str:
+    """
+    Retrieves relevant adverse media natively using DuckDB Vector Similarity Search (vss).
+    Calculates L2 distance via `array_distance`.
+    """
+    logger.info("Performing native DuckDB vector search for motive discovery...")
     
-    # Load FAISS index and metadata
-    index = faiss.read_index(str(INDEX_PATH))
-    with METADATA_PATH.open("r", encoding="utf-8") as f:
-        metadata = json.load(f)
-        
-    # Load the raw news text to return the actual snippet
-    news_path = DATA_DIR / "adverse_media.json"
-    with news_path.open("r", encoding="utf-8") as f:
-        news_data = json.load(f)
-        
-    # Embed the query (using the investigator notes as the semantic search vector)
-    query_vector = model.encode([query_text]).astype('float32')
-    
-    # Execute L2 distance search
-    distances, indices = index.search(query_vector, k)
-    
-    # Retrieve the closest matching snippet
-    match_idx = indices[0][0]
-    return news_data[match_idx]["article_snippet"]
+    # 1. Embed the query into a 384-dimensional vector.
+    query_vector = model.encode([query_text])[0].astype("float32")
+
+    # 2. Prefer native DuckDB VSS when the table is materialized.
+    table_exists = con.execute(
+        """
+        SELECT 1
+        FROM information_schema.tables
+        WHERE table_schema = 'main' AND table_name = 'adverse_media'
+        """
+    ).fetchone()
+
+    if table_exists:
+        query = """
+            SELECT article_snippet
+            FROM adverse_media
+            ORDER BY array_distance(embedding, ?::FLOAT[384]) ASC
+            LIMIT 1;
+        """
+        try:
+            result = con.execute(query, [query_vector.tolist()]).fetchone()
+            if result:
+                return result[0]
+        except duckdb.Error as exc:
+            logger.warning("DuckDB VSS query failed, falling back to FAISS: %s", exc)
+
+    # 3. Fallback path: use persisted FAISS index produced by initialize_hybrid_indexes.py.
+    if not INDEX_PATH.exists() or not NEWS_PATH.exists():
+        return "No adverse media found."
+
+    try:
+        index = faiss.read_index(str(INDEX_PATH))
+        _, neighbors = index.search(np.array([query_vector]), 1)
+        hit = int(neighbors[0][0])
+        if hit < 0:
+            return "No adverse media found."
+
+        with NEWS_PATH.open("r", encoding="utf-8") as media_file:
+            news_data = json.load(media_file)
+
+        if hit >= len(news_data):
+            return "No adverse media found."
+
+        return news_data[hit].get("article_snippet", "No adverse media found.")
+    except Exception as exc:  # noqa: BLE001
+        logger.warning("FAISS fallback retrieval failed: %s", exc)
+        return "No adverse media found."
 
 def call_local_llm_deterministic(prompt: str) -> dict:
     """
@@ -181,22 +216,49 @@ def call_local_llm_deterministic(prompt: str) -> dict:
         }
     }
     
-    try:
-        response = requests.post(OLLAMA_API_URL, json=payload, timeout=120)
-        response.raise_for_status()
-        return json.loads(response.json()["response"])
-    except requests.exceptions.RequestException as e:
-        logger.error(
-            "LLM API call failed for %s. Ensure the local Ollama instance is running and reachable. Error: %s",
-            OLLAMA_API_URL,
-            e,
-        )
-        return {"error": "LLM_CONNECTION_FAILED"}
+    for attempt in range(1, OLLAMA_MAX_RETRIES + 1):
+        try:
+            response = requests.post(
+                OLLAMA_API_URL,
+                json=payload,
+                timeout=(10, OLLAMA_TIMEOUT_SECONDS),
+            )
+            response.raise_for_status()
+            return json.loads(response.json()["response"])
+        except requests.exceptions.Timeout as exc:
+            logger.warning(
+                "LLM request timed out on attempt %s/%s (read timeout=%ss): %s",
+                attempt,
+                OLLAMA_MAX_RETRIES,
+                OLLAMA_TIMEOUT_SECONDS,
+                exc,
+            )
+            if attempt < OLLAMA_MAX_RETRIES:
+                # Short backoff for Ollama cold-start/model-load scenarios.
+                time.sleep(2)
+                continue
+            logger.error(
+                "LLM API call failed for %s after %s attempts due to timeout.",
+                OLLAMA_API_URL,
+                OLLAMA_MAX_RETRIES,
+            )
+            return {"error": "LLM_CONNECTION_FAILED"}
+        except (requests.exceptions.RequestException, json.JSONDecodeError, KeyError) as exc:
+            logger.error(
+                "LLM API call failed for %s. Ensure the local Ollama instance is running and reachable. Error: %s",
+                OLLAMA_API_URL,
+                exc,
+            )
+            return {"error": "LLM_CONNECTION_FAILED"}
 
 def connect_research_db() -> tuple[duckdb.DuckDBPyConnection, tempfile.TemporaryDirectory | None]:
-    """Connect to the research database, falling back to a temporary snapshot if the live file is locked."""
+    """Connect to the research database, falling back to a temporary snapshot if locked."""
     try:
-        return duckdb.connect(str(DB_PATH), read_only=True), None
+        con = duckdb.connect(str(DB_PATH), read_only=True)
+        # Ensure the vss extension is loaded for the read_only connection
+        con.execute("INSTALL vss;")
+        con.execute("LOAD vss;")
+        return con, None
     except duckdb.IOException as exc:
         if "Conflicting lock is held" not in str(exc):
             raise
@@ -209,7 +271,11 @@ def connect_research_db() -> tuple[duckdb.DuckDBPyConnection, tempfile.Temporary
             DB_PATH,
             snapshot_path,
         )
-        return duckdb.connect(str(snapshot_path), read_only=True), temp_dir
+        con = duckdb.connect(str(snapshot_path), read_only=True)
+        # Ensure the vss extension is loaded for the snapshot connection
+        con.execute("INSTALL vss;")
+        con.execute("LOAD vss;")
+        return con, temp_dir
 
 def execute_agentic_workflow():
     """Orchestrates the end-to-end GraphRAG adjudication."""
@@ -220,12 +286,14 @@ def execute_agentic_workflow():
         evidence = extract_structural_evidence(con)
         target_node = evidence["node_id"]
         
-        # 2. Retrieval Phase (FAISS Motive)
+        # 2. Retrieval Phase (DuckDB Text/Lexical)
         kyc_context = retrieve_lexical_context(con, target_node)
-        semantic_query = f"{kyc_context.get('entity_name', '')} {kyc_context.get('jurisdiction', '')} {kyc_context.get('internal_notes', '')}"
-        adverse_media = retrieve_semantic_context(semantic_query)
         
-        # 3. Prompt Engineering (The Context Fusion)
+        # 3. Retrieval Phase (DuckDB Semantic/VSS)
+        semantic_query = f"{kyc_context.get('entity_name', '')} {kyc_context.get('jurisdiction', '')} {kyc_context.get('internal_notes', '')}"
+        adverse_media = retrieve_semantic_context(con, semantic_query)
+        
+        # 4. Prompt Engineering (The Context Fusion)
         prompt = f"""
     You are an expert Anti-Money Laundering (AML) system. Analyze the following GraphRAG context and output your verdict in STRICT JSON format.
     
@@ -254,7 +322,7 @@ def execute_agentic_workflow():
     }}
     """
 
-        # 4. Adjudication Phase
+        # 5. Adjudication Phase
         verdict = call_local_llm_deterministic(prompt)
         
         logger.info("\n=== FINAL AGENTIC VERDICT ===")
