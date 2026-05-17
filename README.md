@@ -88,3 +88,44 @@ If you use this architecture or codebase in your research, please cite the accom
 
 ## 🔒 Data Privacy Notice
 This repository contains only synthetic data generated strictly for testing purposes. No real Personally Identifiable Information (PII), proprietary corporate data, or live financial transaction records are included in this codebase.
+
+## 🧠 Running a Local LLM (Ollama)
+
+This project is designed to use a local LLM served via Ollama at `http://localhost:11434` for adjudication. If you plan to run the full pipeline with model-based adjudication, follow these quick steps.
+
+1. Ensure the `ollama` CLI is installed. On macOS/Linux you can run:
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+2. Start the Ollama server and pull the desired model (defaults to `mistral`). A convenience script is provided:
+
+```bash
+./scripts/start_ollama.sh [model_name]
+# example: ./scripts/start_ollama.sh mistral
+```
+
+The script will:
+- Start the Ollama daemon (`ollama serve`) if it's not already running.
+- Pull the requested model if it's not available locally.
+
+3. Verify the API is reachable:
+
+```bash
+curl -sSf http://127.0.0.1:11434/api/tags
+```
+
+4. Run the adjudication pipeline using the health-check flag to automatically fall back if Ollama is unreachable:
+
+```bash
+python scripts/execute_adjudication_agent.py --health-check-llm
+```
+
+If you do not want to use the LLM and prefer deterministic rule-based adjudication, run with:
+
+```bash
+python scripts/execute_adjudication_agent.py --disable-llm
+```
+
+If you need help installing or troubleshooting Ollama, consult the official docs: https://ollama.ai

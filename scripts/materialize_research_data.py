@@ -1,105 +1,64 @@
-import json
 import logging
-import random
 from pathlib import Path
-
-import numpy as np
-import pandas as pd
-from faker import Faker
-
-# --- RESEARCH REPRODUCIBILITY SEED ---
-# This constant is the "Anchor" for the experiment's ground truth.
-RANDOM_SEED = 42
-random.seed(RANDOM_SEED)
-np.random.seed(RANDOM_SEED)
-
-# 1. Standardized environment setup
-DATA_DIR = Path("data/raw")
-DATA_DIR.mkdir(parents=True, exist_ok=True)
-
-# Initialize Faker with a fixed seed for deterministic semantic synthesis.
-FAKER = Faker()
-FAKER.seed_instance(RANDOM_SEED)
+import duckdb
 
 # Configure logging for clear run-time status.
-logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
+# Standardized environment setup
+RAW_DATA_DIR = Path("data/raw")
+PROCESSED_DIR = Path("data/processed")
+PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
-def generate_unified_dataset(num_benign: int = 10000, num_loops: int = 50) -> None:
+# The target DuckDB database file
+DB_PATH = PROCESSED_DIR / "argus_research.db"
+
+def materialize_duckdb_environment():
     """
-    Create a linked dataset where structural anomalies
-    in the ledger correspond to semantic clues in the KYC/News corpus.
+    Reads the SOTA generated data from data/raw/ and materializes it into
+    a highly optimized, zero-IPC DuckDB database for GraphRAG traversal.
     """
-    logger.info(
-        "Initializing Materialization: %s transactions, %s loops.",
-        num_benign,
-        num_loops,
-    )
+    logger.info(f"Initializing DuckDB materialization at: {DB_PATH}")
+    
+    # Connect to the persistent DuckDB file
+    con = duckdb.connect(str(DB_PATH))
 
-    # --- PART A: STRUCTURAL LEDGER GENERATION ---
-    ledger_data = {
-        "trx_id": [f"TXN_{i}" for i in range(num_benign)],
-        "source_id": [f"CUST_{np.random.randint(1, 1000)}" for _ in range(num_benign)],
-        "target_id": [f"CUST_{np.random.randint(1, 1000)}" for _ in range(num_benign)],
-        "amount": np.random.uniform(10, 5000, num_benign),
-        "timestamp": pd.date_range(start="2026-01-01", periods=num_benign, freq="min"),
-    }
-    ledger_df = pd.DataFrame(ledger_data)
+    try:
+        # --- 1. Load the synthetic transaction ledger ---
+        ledger_path = RAW_DATA_DIR / "synthetic_ledger.csv"
+        logger.info(f"Materializing raw_ledger from {ledger_path}...")
+        # read_csv_auto automatically infers schema types (including BOOLEAN and TIMESTAMP)
+        if not ledger_path.exists():
+            raise FileNotFoundError(f"Missing required file: {ledger_path}")
+        con.execute(f"CREATE OR REPLACE TABLE raw_ledger AS SELECT * FROM read_csv_auto('{ledger_path}')")
 
-    # --- PART B: SEMANTIC CORPUS & LOOP INJECTION ---
-    kyc_records = []
-    news_records = []
+        # --- 2. Load the KYC profiles ---
+        kyc_path = RAW_DATA_DIR / "kyc_profiles.json"
+        logger.info(f"Materializing kyc_profiles from {kyc_path}...")
+        if not kyc_path.exists():
+            raise FileNotFoundError(f"Missing required file: {kyc_path}")
+        con.execute(f"CREATE OR REPLACE TABLE kyc_profiles AS SELECT * FROM read_json_auto('{kyc_path}')")
 
-    for i in range(num_loops):
-        s, m, t = f"LOOP_S_{i}", f"LOOP_M_{i}", f"LOOP_T_{i}"
-        ts = pd.Timestamp("2026-02-01") + pd.Timedelta(hours=i)
+        # --- 3. Load the adverse media documents ---
+        adverse_path = RAW_DATA_DIR / "adverse_media.json"
+        logger.info(f"Materializing adverse_media from {adverse_path}...")
+        if not adverse_path.exists():
+            raise FileNotFoundError(f"Missing required file: {adverse_path}")
+        con.execute(f"CREATE OR REPLACE TABLE adverse_media AS SELECT * FROM read_json_auto('{adverse_path}')")
 
-        # 1. Create Ledger Edges (Structural Evidence)
-        loop_txns = [
-            {"trx_id": f"L_A_{i}", "source_id": s, "target_id": m, "amount": 1000.0, "timestamp": ts},
-            {"trx_id": f"L_B_{i}", "source_id": m, "target_id": t, "amount": 950.0,  "timestamp": ts + pd.Timedelta(seconds=30)},
-            {"trx_id": f"L_C_{i}", "source_id": t, "target_id": s, "amount": 915.0,  "timestamp": ts + pd.Timedelta(seconds=60)},
-        ]
-        ledger_df = pd.concat([ledger_df, pd.DataFrame(loop_txns)], ignore_index=True)
+        # --- Validation ---
+        tables = con.execute("SHOW TABLES").fetchall()
+        table_names = [table[0] for table in tables]
+        
+        logger.info(f"SUCCESS: DuckDB successfully materialized the following tables: {table_names}")
 
-        # 2. Create Semantic Evidence (Investigative Evidence)
-        kyc_records.append({
-            "node_id": s,
-            "entity_name": FAKER.company(),
-            "jurisdiction": random.choice(["Panama", "Cyprus", "Cayman Islands", "Seychelles"]),
-            "investigator_notes": f"High frequency circular transfers detected. Linked to beneficial owner {FAKER.name()}."
-        })
-
-        news_records.append({
-            "related_node": s,
-            "source": "Global Fin-Watch",
-            "article_snippet": f"Investigation into {FAKER.word()} networks reveals systematic tax evasion in {random.choice(['Eastern Europe', 'Bermuda'])}."
-        })
-
-    # --- PART C: NOISE INJECTION (Benign Entities) ---
-    for i in range(500):
-        node = f"CUST_{i}"
-        kyc_records.append({
-            "node_id": node,
-            "entity_name": FAKER.name(),
-            "jurisdiction": "United Kingdom",
-            "investigator_notes": "Retail account. Low risk profile.",
-        })
-
-    # --- PART D: FILE PERSISTENCE ---
-    ledger_path = DATA_DIR / "synthetic_ledger.csv"
-    kyc_path = DATA_DIR / "kyc_profiles.json"
-    news_path = DATA_DIR / "adverse_media.json"
-
-    ledger_df.to_csv(ledger_path, index=False)
-    with kyc_path.open("w", encoding="utf-8") as kyc_file:
-        json.dump(kyc_records, kyc_file, indent=4)
-    with news_path.open("w", encoding="utf-8") as news_file:
-        json.dump(news_records, news_file, indent=4)
-
-    logger.info("SUCCESS: Structural and Semantic evidence materialized in %s", DATA_DIR)
-
+    except Exception as e:
+        logger.error(f"Failed to materialize DuckDB tables: {e}")
+    finally:
+        # Always ensure the connection is closed to flush to disk
+        con.close()
+        logger.info("Database connection closed. Zero-IPC Database is ready for Step 3.")
 
 if __name__ == "__main__":
-    generate_unified_dataset()
+    materialize_duckdb_environment()

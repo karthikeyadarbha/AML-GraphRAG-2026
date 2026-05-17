@@ -1,336 +1,292 @@
+import os
 import json
 import logging
-import os
-import shutil
-import tempfile
-import time
+import uuid
 from pathlib import Path
-
 import duckdb
 import faiss
-import numpy as np
+import argparse
 import requests
+import numpy as np
 from sentence_transformers import SentenceTransformer
 
-# 1. Standardized Environment Configuration
-DATA_DIR = Path("data/raw")
+# =============================================================================
+# CONFIGURATION & LOGGING
+# =============================================================================
+logging.basicConfig(
+    level=logging.INFO, 
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S"
+)
+logger = logging.getLogger("AgenticGraphRAG")
+
 PROCESSED_DIR = Path("data/processed")
 DB_PATH = PROCESSED_DIR / "argus_research.db"
-INDEX_PATH = PROCESSED_DIR / "vector_index.faiss"
-NEWS_PATH = DATA_DIR / "adverse_media.json"
+FAISS_INDEX_PATH = PROCESSED_DIR / "vector_index.faiss"
+METADATA_PATH = PROCESSED_DIR / "vector_metadata.json"
 
-logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
-logger = logging.getLogger(__name__)
-OLLAMA_API_URL = os.getenv("OLLAMA_API_URL", "http://127.0.0.1:11434/api/generate")
-OLLAMA_TIMEOUT_SECONDS = int(os.getenv("OLLAMA_TIMEOUT_SECONDS", "240"))
-OLLAMA_MAX_RETRIES = int(os.getenv("OLLAMA_MAX_RETRIES", "2"))
+OLLAMA_API_URL = "http://localhost:11434/api/generate"
+OLLAMA_HEALTH_URL = "http://localhost:11434/api/tags"
+# Use the local model you have pulled in Ollama (e.g., 'mistral', 'llama3')
+LLM_MODEL = "mistral" 
 
-# Initialize the embedding model
-model = SentenceTransformer('all-MiniLM-L6-v2')
-##model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
-
-def extract_structural_evidence(con: duckdb.DuckDBPyConnection) -> dict:
+# =============================================================================
+# THE DETERMINISTIC SQL ENGINE (GRAPH TRAVERSAL)
+# =============================================================================
+def execute_graph_traversal() -> list:
     """
-    Executes deterministic Graph queries to find structural anomalies.
-    Scans for Circular loops (PVR) first, then falls back to Aggregation Sinks (Consolidation).
+    Executes the Recursive CTE in DuckDB to find circular laundering typologies.
+    Outputs the exact schema for the Graph_Anomaly_Dossier.
     """
-    logger.info("Executing recursive graph traversal for structural anomalies...")
+    logger.info("Executing Micro Zero-IPC Graph Traversal in DuckDB...")
+    con = duckdb.connect(str(DB_PATH))
     
-    # 1. Circular CTE (Cycles / Layering)
-    query_circular = """
-    WITH RECURSIVE loop_search AS (
+    # The strictly schema-aligned SQL query
+    query = """
+    WITH RECURSIVE Graph_Traversal AS (
+        -- 1. ANCHOR STEP
         SELECT 
-            source_id AS start_node,
-            target_id AS current_node,
-            amount AS initial_amount,
-            amount AS current_amount,
-            timestamp AS start_time,
-            timestamp AS current_time,
+            Transaction_ID AS root_tx,
+            Source_Account AS anchor_node,
+            Target_Account AS current_node,
+            Transfer_Weight AS initial_principal,
+            Transfer_Weight AS current_amount,
+            Timestamp AS start_time,
+            Timestamp AS last_time,
             1 AS hop_count,
-            [source_id] AS path_history
-        FROM graph_edges
-        
+            [Source_Account, Target_Account] AS path_history 
+        FROM raw_Ledger
+        WHERE Transfer_Weight >= 50000 
+
         UNION ALL
-        
+
+        -- 2. RECURSIVE STEP
         SELECT 
-            ls.start_node,
-            e.target_id,
-            ls.initial_amount,
-            e.amount,
-            ls.start_time,
-            e.timestamp,
-            ls.hop_count + 1,
-            list_append(ls.path_history, e.source_id)
-        FROM loop_search ls
-        JOIN graph_edges e ON ls.current_node = e.source_id
-        WHERE ls.hop_count < 3
-          AND e.timestamp > ls.current_time
-          AND NOT list_contains(ls.path_history, e.target_id)
+            gt.root_tx,
+            gt.anchor_node,
+            l.Target_Account,
+            gt.initial_principal,
+            l.Transfer_Weight,
+            gt.start_time,
+            l.Timestamp,
+            gt.hop_count + 1,
+            list_append(gt.path_history, l.Target_Account)
+        FROM Graph_Traversal gt
+        INNER JOIN raw_Ledger l 
+            ON gt.current_node = l.Source_Account
+        WHERE 
+            gt.hop_count < 8 
+            -- Prevent inner loops
+            AND NOT list_contains(gt.path_history[2:], l.Target_Account)
+            AND l.Timestamp > gt.last_time 
+            AND l.Timestamp <= gt.last_time + INTERVAL 72 HOUR
     )
+    
+    -- 3. SCHEMA-ALIGNED OUTPUT: Graph_Anomaly_Dossier
     SELECT 
-        'CIRCULAR' AS typology,
-        start_node AS target_entity,
-        initial_amount,
-        current_amount,
-        (current_amount / initial_amount) * 100 AS metric_value,
-        epoch(current_time) - epoch(start_time) AS latency_seconds
-    FROM loop_search
-    WHERE current_node = start_node AND hop_count > 1
-    ORDER BY metric_value DESC
-    LIMIT 1;
+        uuid() AS Dossier_ID,
+        anchor_node AS Anchor_Node,
+        hop_count AS Hop_Count,
+        ROUND((current_amount / initial_principal) * 100, 2) AS PVR_Percentage,
+        ROUND(current_amount / initial_principal, 2) AS Consolidation_Ratio,
+        ROUND(hop_count / (date_diff('second', start_time, last_time) / 3600.0), 4) AS MVR_Score,
+        path_history AS Confirmed_Topology
+    FROM Graph_Traversal
+    WHERE 
+        current_node = anchor_node 
+        AND hop_count >= 3;
     """
     
-    # 2. Aggregation CTE (Fan-In / Smurfing)
-    query_aggregation = """
-    WITH SinkDetection AS (
-        SELECT 
-            target_id AS sink_node,
-            count(distinct source_id) AS unique_sources,
-            list(distinct source_id) AS source_cluster,
-            sum(amount) AS total_received,
-            min(timestamp) AS window_start,
-            max(timestamp) AS window_end
-        FROM graph_edges
-        GROUP BY target_id
-        HAVING unique_sources > 2 
-           AND (epoch(max(timestamp)) - epoch(min(timestamp))) < 172800 -- 48 hours
-    )
-    SELECT 
-        'AGGREGATION' AS typology,
-        sink_node AS target_entity,
-        0 AS initial_amount, -- N/A for aggregation
-        total_received AS current_amount,
-        (total_received / (
-            SELECT sum(amount) 
-            FROM graph_edges 
-            WHERE source_id IN (SELECT unnest(source_cluster))
-        )) * 100 AS metric_value,
-        epoch(window_end) - epoch(window_start) AS latency_seconds
-    FROM SinkDetection
-    ORDER BY metric_value DESC
-    LIMIT 1;
-    """
-
-    # Priority Search: Look for Circular first, then Aggregation
-    result = con.execute(query_circular).fetchone()
-    
-    if not result:
-        logger.info("No Circular loops found. Scanning for Aggregation (Fan-In) typologies...")
-        result = con.execute(query_aggregation).fetchone()
-
-    if not result:
-        raise ValueError("No structural anomalies (Circular or Aggregation) detected in the graph.")
-    
-    typology = result[0]
-    return {
-        "typology": typology,
-        "node_id": result[1],
-        "final_volume": result[3],
-        "metric_name": "Principal Value Retention (PVR)" if typology == 'CIRCULAR' else "Consolidation Ratio",
-        "metric_value": round(result[4], 2),
-        "latency_seconds": result[5]
-    }
-
-def retrieve_lexical_context(con: duckdb.DuckDBPyConnection, node_id: str) -> dict:
-    """Retrieves exact KYC profile using DuckDB Full-Text Search."""
-    logger.info("Retrieving lexical context for node: %s", node_id)
-    query = f"SELECT entity_name, jurisdiction, investigator_notes FROM kyc_index WHERE node_id = '{node_id}'"
-    result = con.execute(query).fetchone()
-    
-    return {
-        "entity_name": result[0],
-        "jurisdiction": result[1],
-        "internal_notes": result[2]
-    } if result else {}
-
-def retrieve_semantic_context(con: duckdb.DuckDBPyConnection, query_text: str) -> str:
-    """
-    Retrieves relevant adverse media natively using DuckDB Vector Similarity Search (vss).
-    Calculates L2 distance via `array_distance`.
-    """
-    logger.info("Performing native DuckDB vector search for motive discovery...")
-    
-    # 1. Embed the query into a 384-dimensional vector.
-    query_vector = model.encode([query_text])[0].astype("float32")
-
-    # 2. Prefer native DuckDB VSS when the table is materialized.
-    table_exists = con.execute(
-        """
-        SELECT 1
-        FROM information_schema.tables
-        WHERE table_schema = 'main' AND table_name = 'adverse_media'
-        """
-    ).fetchone()
-
-    if table_exists:
-        query = """
-            SELECT article_snippet
-            FROM adverse_media
-            ORDER BY array_distance(embedding, ?::FLOAT[384]) ASC
-            LIMIT 1;
-        """
-        try:
-            result = con.execute(query, [query_vector.tolist()]).fetchone()
-            if result:
-                return result[0]
-        except duckdb.Error as exc:
-            logger.warning("DuckDB VSS query failed, falling back to FAISS: %s", exc)
-
-    # 3. Fallback path: use persisted FAISS index produced by initialize_hybrid_indexes.py.
-    if not INDEX_PATH.exists() or not NEWS_PATH.exists():
-        return "No adverse media found."
-
     try:
-        index = faiss.read_index(str(INDEX_PATH))
-        _, neighbors = index.search(np.array([query_vector]), 1)
-        hit = int(neighbors[0][0])
-        if hit < 0:
-            return "No adverse media found."
+        results_df = con.execute(query).df()
+        # Convert to a list of dicts for easy processing
+        return results_df.to_dict(orient='records')
+    finally:
+        con.close()
 
-        with NEWS_PATH.open("r", encoding="utf-8") as media_file:
-            news_data = json.load(media_file)
-
-        if hit >= len(news_data):
-            return "No adverse media found."
-
-        return news_data[hit].get("article_snippet", "No adverse media found.")
-    except Exception as exc:  # noqa: BLE001
-        logger.warning("FAISS fallback retrieval failed: %s", exc)
-        return "No adverse media found."
-
-def call_local_llm_deterministic(prompt: str) -> dict:
+# =============================================================================
+# THE SEMANTIC BRIDGE (FAISS VECTOR SEARCH)
+# =============================================================================
+def retrieve_semantic_context(target_node: str, model: SentenceTransformer, index, metadata: list) -> str:
     """
-    Calls a local LLM (e.g., Ollama running Mistral) enforcing T=0.0 
-    for strict, reproducible JSON output.
+    Queries the FAISS index to find the unstructured KYC/Adverse Media 
+    context most relevant to the targeted anomaly.
     """
-    logger.info("Dispatching fused context to Agentic LLM (T=0.0)...")
+    # Formulate the natural language query
+    query_text = f"Regulatory risk, adverse media, and KYC profile for entity {target_node}"
+    
+    # Encode and apply the exact L2 Normalization used during indexing
+    query_vector = model.encode([query_text])
+    faiss.normalize_L2(query_vector)
+    
+    # Search the FAISS index for the single closest match (k=1)
+    distances, indices = index.search(query_vector, k=1)
+    
+    match_index = indices[0][0]
+    if match_index != -1 and match_index < len(metadata):
+        return metadata[match_index].get('Raw_Text', 'No context available.')
+    return "No context available."
+
+# =============================================================================
+# THE LOCAL ADJUDICATOR (OLLAMA LLM)
+# =============================================================================
+# Global flag set at runtime based on CLI or health-check
+OLLAMA_AVAILABLE = True
+
+
+def check_ollama_health(timeout: float = 2.0) -> bool:
+    try:
+        resp = requests.get(OLLAMA_HEALTH_URL, timeout=timeout)
+        return resp.status_code == 200
+    except Exception:
+        return False
+
+
+def rule_based_adjudication(dossier: dict, err_msg: str | None = None) -> dict:
+    try:
+        pvr = float(dossier.get('PVR_Percentage', 0))
+    except Exception:
+        pvr = 0.0
+    semantic = str(dossier.get('Semantic_Context', '')).lower()
+
+    if 85.0 <= pvr <= 95.0 and any(k in semantic for k in ("high-risk", "high risk", "opaque", "flagged", "flag")):
+        return {
+            "SAR_Confidence_Score": 92,
+            "Verdict": "High Confidence SAR",
+            "Justification": f"Rule-based fallback: PVR {pvr}% within [85,95] and semantic context indicates elevated risk. LLM unavailable: {err_msg}"
+        }
+    elif pvr >= 95.0:
+        return {
+            "SAR_Confidence_Score": 75,
+            "Verdict": "Review Required",
+            "Justification": f"Rule-based fallback: Very high PVR ({pvr}%). LLM unavailable: {err_msg}"
+        }
+    else:
+        return {
+            "SAR_Confidence_Score": 10,
+            "Verdict": "No SAR",
+            "Justification": f"Rule-based fallback: PVR {pvr}% does not meet SAR thresholds. LLM unavailable: {err_msg}"
+        }
+
+def evaluate_dossier_with_llm(dossier: dict) -> dict:
+    """
+    Forces the local LLM to evaluate the combined mathematical and semantic 
+    evidence. Temperature is locked to 0.0 to prevent hallucinations.
+    """
+    system_prompt = """You are a strict Anti-Money Laundering (AML) Adjudicator. 
+    You are evaluating mathematically proven topological graph evidence against unstructured semantic context.
+    The Principal Value Retention (PVR) and Multi-hop Velocity Ratio (MVR) are IMMUTABLE FACTS.
+    
+    TASK: Evaluate the Evidence Dossier. If the PVR is between 85% and 95% and the Semantic Context indicates high-risk or opaque behavior, classify as a High Confidence SAR.
+    
+    OUTPUT: You must output ONLY valid JSON matching this schema:
+    {
+        "SAR_Confidence_Score": <int 0-100>,
+        "Verdict": "<string>",
+        "Justification": "<string>"
+    }
+    """
+    
+    # If we've determined Ollama is not available, use the deterministic fallback
+    if not globals().get('OLLAMA_AVAILABLE', True):
+        return rule_based_adjudication(dossier, err_msg="LLM disabled or health-check failed")
+
+    # Ensure the dossier is JSON serializable (convert UUIDs, numpy types, etc.)
+    def _json_default(o):
+        # UUIDs -> str
+        if isinstance(o, uuid.UUID):
+            return str(o)
+        # NumPy scalar types -> native Python scalars
+        try:
+            import numpy as _np
+            if isinstance(o, (_np.integer, _np.floating)):
+                return o.item()
+            if isinstance(o, _np.ndarray):
+                return o.tolist()
+        except Exception:
+            pass
+        # Fallback: stringify unknown objects
+        return str(o)
+
+    prompt = f"{system_prompt}\n\nEVIDENCE DOSSIER:\n{json.dumps(dossier, indent=2, default=_json_default)}"
     
     payload = {
-        "model": "mistral",
+        "model": LLM_MODEL,
         "prompt": prompt,
-        "format": "json",
+        "format": "json",       # Enforce strict JSON output
         "stream": False,
         "options": {
-            "temperature": 0.0,  # Enforcing deterministic output
-            "top_p": 0.1
+            "temperature": 0.0  # CRITICAL: Ensures deterministic evaluation
         }
     }
     
-    for attempt in range(1, OLLAMA_MAX_RETRIES + 1):
-        try:
-            response = requests.post(
-                OLLAMA_API_URL,
-                json=payload,
-                timeout=(10, OLLAMA_TIMEOUT_SECONDS),
-            )
-            response.raise_for_status()
-            return json.loads(response.json()["response"])
-        except requests.exceptions.Timeout as exc:
-            logger.warning(
-                "LLM request timed out on attempt %s/%s (read timeout=%ss): %s",
-                attempt,
-                OLLAMA_MAX_RETRIES,
-                OLLAMA_TIMEOUT_SECONDS,
-                exc,
-            )
-            if attempt < OLLAMA_MAX_RETRIES:
-                # Short backoff for Ollama cold-start/model-load scenarios.
-                time.sleep(2)
-                continue
-            logger.error(
-                "LLM API call failed for %s after %s attempts due to timeout.",
-                OLLAMA_API_URL,
-                OLLAMA_MAX_RETRIES,
-            )
-            return {"error": "LLM_CONNECTION_FAILED"}
-        except (requests.exceptions.RequestException, json.JSONDecodeError, KeyError) as exc:
-            logger.error(
-                "LLM API call failed for %s. Ensure the local Ollama instance is running and reachable. Error: %s",
-                OLLAMA_API_URL,
-                exc,
-            )
-            return {"error": "LLM_CONNECTION_FAILED"}
-
-def connect_research_db() -> tuple[duckdb.DuckDBPyConnection, tempfile.TemporaryDirectory | None]:
-    """Connect to the research database, falling back to a temporary snapshot if locked."""
     try:
-        con = duckdb.connect(str(DB_PATH), read_only=True)
-        # Ensure the vss extension is loaded for the read_only connection
-        con.execute("INSTALL vss;")
-        con.execute("LOAD vss;")
-        return con, None
-    except duckdb.IOException as exc:
-        if "Conflicting lock is held" not in str(exc):
-            raise
+        response = requests.post(OLLAMA_API_URL, json=payload)
+        response.raise_for_status()
+        result = response.json()
+        return json.loads(result.get("response", "{}"))
+    except Exception as e:
+        logger.error(f"LLM API Error: {e}")
+        return rule_based_adjudication(dossier, err_msg=str(e))
 
-        temp_dir = tempfile.TemporaryDirectory(prefix="argus-db-snapshot-")
-        snapshot_path = Path(temp_dir.name) / DB_PATH.name
-        shutil.copy2(DB_PATH, snapshot_path)
-        logger.warning(
-            "Database lock detected on %s. Using snapshot copy at %s for adjudication.",
-            DB_PATH,
-            snapshot_path,
-        )
-        con = duckdb.connect(str(snapshot_path), read_only=True)
-        # Ensure the vss extension is loaded for the snapshot connection
-        con.execute("INSTALL vss;")
-        con.execute("LOAD vss;")
-        return con, temp_dir
+# =============================================================================
+# MAIN ORCHESTRATOR
+# =============================================================================
+def run_agentic_adjudication():
+    logger.info("--- Starting Agentic Relational GraphRAG Pipeline ---")
+    
+    # 1. Load the AI Engine components into memory
+    logger.info("Loading d=384 embedding model and FAISS Index...")
+    embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+    faiss_index = faiss.read_index(str(FAISS_INDEX_PATH))
+    
+    with open(METADATA_PATH, 'r') as f:
+        vector_metadata = json.load(f)
 
-def execute_agentic_workflow():
-    """Orchestrates the end-to-end GraphRAG adjudication."""
-    con, temp_dir = connect_research_db()
+    # 2. Extract Mathematical Proofs via SQL
+    anomalies = execute_graph_traversal()
+    
+    if not anomalies:
+        logger.info("No circular multi-hop typologies detected in the ledger.")
+        return
 
-    try:
-        # 1. Structural Phase (DuckDB Math)
-        evidence = extract_structural_evidence(con)
-        target_node = evidence["node_id"]
+    logger.info(f"Detected {len(anomalies)} mathematical anomalies. Engaging LLM Adjudicator...")
+    
+    # 3. Adjudicate each anomaly
+    for idx, anomaly in enumerate(anomalies, 1):
+        target = anomaly['Anchor_Node']
+        logger.info(f"\n[Case {idx}/{len(anomalies)}] Investigating Anchor Node: {target}")
         
-        # 2. Retrieval Phase (DuckDB Text/Lexical)
-        kyc_context = retrieve_lexical_context(con, target_node)
+        # A. Bridge the Gap (Fetch unstructured context via Vector Search)
+        context = retrieve_semantic_context(target, embedding_model, faiss_index, vector_metadata)
+        anomaly['Semantic_Context'] = context
         
-        # 3. Retrieval Phase (DuckDB Semantic/VSS)
-        semantic_query = f"{kyc_context.get('entity_name', '')} {kyc_context.get('jurisdiction', '')} {kyc_context.get('internal_notes', '')}"
-        adverse_media = retrieve_semantic_context(con, semantic_query)
+        # B. Generate the SAR
+        logger.info("Evaluating combined dossier...")
+        sar_decision = evaluate_dossier_with_llm(anomaly)
         
-        # 4. Prompt Engineering (The Context Fusion)
-        prompt = f"""
-    You are an expert Anti-Money Laundering (AML) system. Analyze the following GraphRAG context and output your verdict in STRICT JSON format.
-    
-    [STRUCTURAL GRAPH METRICS]
-    - Detected Typology: {evidence['typology']}
-    - Target Node ID: {target_node}
-    - Temporal Latency: {evidence['latency_seconds']} seconds
-    - {evidence['metric_name']}: {evidence['metric_value']}%
-    - Total Volume Adjudicated: ${evidence['final_volume']}
-    
-    [INTERNAL KYC CONTEXT]
-    - Entity: {kyc_context.get('entity_name', 'Unknown')}
-    - Jurisdiction: {kyc_context.get('jurisdiction', 'Unknown')}
-    - Notes: {kyc_context.get('internal_notes', 'None')}
-    
-    [EXTERNAL ADVERSE MEDIA]
-    - Semantic Match: {adverse_media}
-    
-    Based on the extremely low latency and structural metrics indicating a deliberate {evidence['typology'].lower()} flow, combined with the adverse media, evaluate the risk.
-    
-    Provide the output exactly matching this JSON schema:
-    {{
-        "SAR_Confidence_Score": <int 0-100>,
-        "Primary_Typology": "<string>",
-        "Auditable_Narrative": "<string summarizing the structural and semantic evidence>"
-    }}
-    """
-
-        # 5. Adjudication Phase
-        verdict = call_local_llm_deterministic(prompt)
+        # C. Output Results
+        logger.info(f"VERDICT: {sar_decision.get('Verdict')}")
+        logger.info(f"CONFIDENCE SCORE: {sar_decision.get('SAR_Confidence_Score')}%")
+        logger.info(f"JUSTIFICATION: {sar_decision.get('Justification')}")
         
-        logger.info("\n=== FINAL AGENTIC VERDICT ===")
-        print(json.dumps(verdict, indent=4))
-    finally:
-        con.close()
-        if temp_dir is not None:
-            temp_dir.cleanup()
+    logger.info("\n--- Adjudication Complete ---")
 
 if __name__ == "__main__":
-    execute_agentic_workflow()
+    parser = argparse.ArgumentParser(description="Run Agentic GraphRAG adjudication")
+    parser.add_argument('--disable-llm', action='store_true', help='Force rule-based adjudication and skip Ollama')
+    parser.add_argument('--health-check-llm', action='store_true', help='Perform a quick Ollama health-check before running; fallback if unreachable')
+    args = parser.parse_args()
+
+    if args.disable_llm:
+        OLLAMA_AVAILABLE = False
+        logger.info("LLM usage disabled via --disable-llm flag. Using rule-based adjudication.")
+    elif args.health_check_llm:
+        healthy = check_ollama_health()
+        if not healthy:
+            OLLAMA_AVAILABLE = False
+            logger.warning("Ollama health-check failed — falling back to rule-based adjudication.")
+        else:
+            logger.info("Ollama health-check passed. Using LLM adjudication.")
+
+    run_agentic_adjudication()
