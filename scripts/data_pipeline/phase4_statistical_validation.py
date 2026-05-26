@@ -16,7 +16,7 @@ def validate_dataset_rigor(df_ledger: pd.DataFrame) -> None:
     
     # 1. Macro-Distribution Proof (K-S Test)
     benign_txns = df_ledger[df_ledger['Is_Synthetic_Fraud'] == False]
-    benign_amounts = benign_txns['Transfer_Weight'].values
+    benign_amounts = benign_txns['Amount'].values
     logger.debug(f"Benign transactions (Is_Synthetic_Fraud==False): {len(benign_txns)}")
     
     if benign_amounts.size == 0:

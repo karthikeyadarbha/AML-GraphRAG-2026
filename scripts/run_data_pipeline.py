@@ -41,14 +41,11 @@ if __name__ == "__main__":
     df_unified.to_csv(ledger_path, index=False)
     logger.info(f"Saved: {ledger_path}")
     
+    # Note: phase 3 already writes kyc_profiles.json and adverse_media.json
     kyc_path = os.path.join(raw_dir, 'kyc_profiles.json')
-    with open(kyc_path, 'w') as f: 
-        json.dump(kyc_data.to_dict(orient='records'), f, indent=4)
     logger.info(f"Saved: {kyc_path}")
         
     am_path = os.path.join(raw_dir, 'adverse_media.json')
-    with open(am_path, 'w') as f: 
-        json.dump(am_data, f, indent=4)
     logger.info(f"Saved: {am_path}")
     
     logger.info("======================================================")

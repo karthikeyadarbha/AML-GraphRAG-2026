@@ -1,0 +1,377 @@
+2026-05-26 16:42:49 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 16:42:49 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-26 16:42:49 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 16:42:49 [INFO] [faiss.loader] Loading faiss with AVX2 support.
+2026-05-26 16:42:49 [INFO] [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-26 16:42:50 [INFO] [AdjudicationAgent] STARTING AGENTIC REASONING CONTINUOUS ADJUDICATION CYCLE
+2026-05-26 16:42:50 [INFO] [AdjudicationAgent] Initiating governance health-check on local LLM: 'llama3'
+2026-05-26 16:42:50 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"
+2026-05-26 16:42:50 [CRITICAL] [AdjudicationAgent] Handshake validation failed. Local engine is throwing structural errors: model 'llama3' not found (status code: 404)
+2026-05-26 16:42:50 [CRITICAL] [AdjudicationAgent] Handshake validation aborted. System terminating to prevent un-auditable probabilistic outputs.
+2026-05-26 16:43:52 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 16:43:52 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-26 16:43:52 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 16:43:52 [INFO] [faiss.loader] Loading faiss with AVX2 support.
+2026-05-26 16:43:52 [INFO] [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-26 16:44:21 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 16:44:21 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-26 16:44:21 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 16:44:21 [INFO] [faiss.loader] Loading faiss with AVX2 support.
+2026-05-26 16:44:21 [INFO] [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-26 16:44:21 [INFO] [AdjudicationAgent] STARTING AGENTIC REASONING CONTINUOUS ADJUDICATION CYCLE
+2026-05-26 16:44:21 [INFO] [AdjudicationAgent] Initiating governance health-check on local LLM: 'llama3'
+2026-05-26 16:44:21 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 404 Not Found"
+2026-05-26 16:44:21 [CRITICAL] [AdjudicationAgent] Handshake validation failed. Local engine is throwing structural errors: model 'llama3' not found (status code: 404)
+2026-05-26 16:44:21 [CRITICAL] [AdjudicationAgent] Handshake validation aborted. System terminating to prevent un-auditable probabilistic outputs.
+2026-05-26 16:47:15 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 16:47:15 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-26 16:47:15 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 16:47:15 [INFO] [faiss.loader] Loading faiss with AVX2 support.
+2026-05-26 16:47:15 [INFO] [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-26 16:47:15 [INFO] [AdjudicationAgent] STARTING AGENTIC REASONING CONTINUOUS ADJUDICATION CYCLE
+2026-05-26 16:47:15 [INFO] [AdjudicationAgent] Initiating governance health-check on local LLM: 'mistral'
+2026-05-26 16:47:18 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 16:47:18 [INFO] [AdjudicationAgent] Handshake complete. Local LLM status response: 'READY'
+2026-05-26 16:47:18 [INFO] [AdjudicationAgent] Establishing zero-IPC session with in-process OLAP engine: data/processed/argus_research.db
+2026-05-26 16:47:18 [INFO] [AdjudicationAgent] Computing mathematical graph matrices via vectorized relational engine...
+2026-05-26 16:47:18 [ERROR] [AdjudicationAgent] Relational Graph processing failure within DuckDB module: Catalog Error: Table with name Financial_Ledger does not exist!
+Did you mean "raw_ledger"?
+
+LINE 13:         FROM Financial_Ledger
+                      ^
+2026-05-26 16:47:18 [INFO] [AdjudicationAgent] No structural topological footprints detected in ledger assets. Suspending pipeline adjudication.
+2026-05-26 16:48:12 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 16:48:12 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-26 16:48:12 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 16:48:12 [INFO] [faiss.loader] Loading faiss with AVX2 support.
+2026-05-26 16:48:12 [INFO] [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-26 16:48:12 [INFO] [AdjudicationAgent] STARTING AGENTIC REASONING CONTINUOUS ADJUDICATION CYCLE
+2026-05-26 16:48:12 [INFO] [AdjudicationAgent] Initiating governance health-check on local LLM: 'mistral'
+2026-05-26 16:48:13 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 16:48:13 [INFO] [AdjudicationAgent] Handshake complete. Local LLM status response: 'READY'
+2026-05-26 16:48:13 [INFO] [AdjudicationAgent] Establishing zero-IPC session with in-process OLAP engine: data/processed/argus_research.db
+2026-05-26 16:48:13 [INFO] [AdjudicationAgent] Computing mathematical graph matrices via vectorized relational engine...
+2026-05-26 16:48:13 [INFO] [AdjudicationAgent] Topological extraction complete. Found 21 structural path loops matches.
+2026-05-26 16:48:13 [INFO] [AdjudicationAgent] Hydrating semantic context indices from local path: data/processed/vector_metadata.json
+2026-05-26 16:48:13 [INFO] [AdjudicationAgent] Successfully cached 100 customer risk documentation map elements in RAM.
+2026-05-26 16:48:13 [INFO] [AdjudicationAgent] Adjudicating Case File [1/21] for target Entity: ACC_UTURN_ANCHOR_0
+2026-05-26 16:49:48 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 16:49:48 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-26 16:49:48 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 16:49:48 [INFO] [faiss.loader] Loading faiss with AVX2 support.
+2026-05-26 16:49:48 [INFO] [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-26 16:49:48 [INFO] [AdjudicationAgent] STARTING AGENTIC REASONING CONTINUOUS ADJUDICATION CYCLE
+2026-05-26 16:49:48 [INFO] [AdjudicationAgent] Initiating governance health-check on local LLM: 'mistral'
+2026-05-26 16:49:49 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 16:49:49 [INFO] [AdjudicationAgent] Handshake complete. Local LLM status response: 'READY'
+2026-05-26 16:49:49 [INFO] [AdjudicationAgent] Establishing zero-IPC session with in-process OLAP engine: data/processed/argus_research.db
+2026-05-26 16:49:49 [INFO] [AdjudicationAgent] Computing mathematical graph matrices via vectorized relational engine...
+2026-05-26 16:49:49 [INFO] [AdjudicationAgent] Topological extraction complete. Found 21 structural path loops matches.
+2026-05-26 16:49:49 [INFO] [AdjudicationAgent] Hydrating semantic context indices from local path: data/processed/vector_metadata.json
+2026-05-26 16:49:49 [INFO] [AdjudicationAgent] Successfully cached 100 customer risk documentation map elements in RAM.
+2026-05-26 16:49:49 [INFO] [AdjudicationAgent] Adjudicating Case File [1/21] for target Entity: ACC_UTURN_ANCHOR_0
+2026-05-26 16:49:49 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_0
+2026-05-26 16:51:04 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 16:51:04 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_0. Payload Response matches:
+2026-05-26 16:51:04 [INFO] [AdjudicationAgent] Adjudicating Case File [2/21] for target Entity: ACC_UTURN_ANCHOR_1
+2026-05-26 16:51:04 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_1
+2026-05-26 16:52:13 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 16:52:13 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_1. Payload Response matches:
+2026-05-26 16:52:13 [INFO] [AdjudicationAgent] Adjudicating Case File [3/21] for target Entity: ACC_UTURN_ANCHOR_2
+2026-05-26 16:52:13 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_2
+2026-05-26 16:53:17 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 16:53:17 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_2. Payload Response matches:
+2026-05-26 16:53:17 [INFO] [AdjudicationAgent] Adjudicating Case File [4/21] for target Entity: ACC_UTURN_ANCHOR_3
+2026-05-26 16:53:17 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_3
+2026-05-26 16:54:20 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 16:54:20 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_3. Payload Response matches:
+2026-05-26 16:54:20 [INFO] [AdjudicationAgent] Adjudicating Case File [5/21] for target Entity: ACC_UTURN_ANCHOR_4
+2026-05-26 16:54:20 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_4
+2026-05-26 16:55:23 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 16:55:23 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_4. Payload Response matches:
+2026-05-26 16:55:23 [INFO] [AdjudicationAgent] Adjudicating Case File [6/21] for target Entity: ACC_UTURN_ANCHOR_5
+2026-05-26 16:55:23 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_5
+2026-05-26 16:56:28 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 16:56:28 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_5. Payload Response matches:
+2026-05-26 16:56:28 [INFO] [AdjudicationAgent] Adjudicating Case File [7/21] for target Entity: ACC_UTURN_ANCHOR_6
+2026-05-26 16:56:28 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_6
+2026-05-26 16:57:32 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 16:57:32 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_6. Payload Response matches:
+2026-05-26 16:57:32 [INFO] [AdjudicationAgent] Adjudicating Case File [8/21] for target Entity: ACC_UTURN_ANCHOR_8
+2026-05-26 16:57:32 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_8
+2026-05-26 16:58:35 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 16:58:35 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_8. Payload Response matches:
+2026-05-26 16:58:35 [INFO] [AdjudicationAgent] Adjudicating Case File [9/21] for target Entity: ACC_UTURN_ANCHOR_9
+2026-05-26 16:58:35 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_9
+2026-05-26 16:59:46 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 16:59:46 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_9. Payload Response matches:
+2026-05-26 16:59:46 [INFO] [AdjudicationAgent] Adjudicating Case File [10/21] for target Entity: ACC_UTURN_ANCHOR_11
+2026-05-26 16:59:46 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_11
+2026-05-26 17:00:46 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:00:46 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_11. Payload Response matches:
+2026-05-26 17:00:46 [INFO] [AdjudicationAgent] Adjudicating Case File [11/21] for target Entity: ACC_UTURN_ANCHOR_13
+2026-05-26 17:00:46 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_13
+2026-05-26 17:01:50 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:01:50 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_13. Payload Response matches:
+2026-05-26 17:01:50 [INFO] [AdjudicationAgent] Adjudicating Case File [12/21] for target Entity: ACC_UTURN_ANCHOR_15
+2026-05-26 17:01:50 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_15
+2026-05-26 17:02:46 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:02:46 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_15. Payload Response matches:
+2026-05-26 17:02:46 [INFO] [AdjudicationAgent] Adjudicating Case File [13/21] for target Entity: ACC_UTURN_ANCHOR_16
+2026-05-26 17:02:46 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_16
+2026-05-26 17:03:44 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:03:44 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_16. Payload Response matches:
+2026-05-26 17:03:44 [INFO] [AdjudicationAgent] Adjudicating Case File [14/21] for target Entity: ACC_UTURN_ANCHOR_17
+2026-05-26 17:03:44 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_17
+2026-05-26 17:04:42 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:04:42 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_17. Payload Response matches:
+2026-05-26 17:04:42 [INFO] [AdjudicationAgent] Adjudicating Case File [15/21] for target Entity: ACC_UTURN_ANCHOR_18
+2026-05-26 17:04:42 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_18
+2026-05-26 17:05:43 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:05:43 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_18. Payload Response matches:
+2026-05-26 17:05:43 [INFO] [AdjudicationAgent] Adjudicating Case File [16/21] for target Entity: ACC_UTURN_ANCHOR_19
+2026-05-26 17:05:43 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_19
+2026-05-26 17:06:50 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:06:50 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_19. Payload Response matches:
+2026-05-26 17:06:50 [INFO] [AdjudicationAgent] Adjudicating Case File [17/21] for target Entity: ACC_UTURN_ANCHOR_20
+2026-05-26 17:06:50 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_20
+2026-05-26 17:07:57 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:07:57 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_20. Payload Response matches:
+2026-05-26 17:07:57 [INFO] [AdjudicationAgent] Adjudicating Case File [18/21] for target Entity: ACC_UTURN_ANCHOR_21
+2026-05-26 17:07:57 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_21
+2026-05-26 17:08:57 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:08:57 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_21. Payload Response matches:
+2026-05-26 17:08:57 [INFO] [AdjudicationAgent] Adjudicating Case File [19/21] for target Entity: ACC_UTURN_ANCHOR_22
+2026-05-26 17:08:57 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_22
+2026-05-26 17:09:56 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:09:56 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_22. Payload Response matches:
+2026-05-26 17:09:56 [INFO] [AdjudicationAgent] Adjudicating Case File [20/21] for target Entity: ACC_UTURN_ANCHOR_23
+2026-05-26 17:09:56 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_23
+2026-05-26 17:10:58 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:10:58 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_23. Payload Response matches:
+2026-05-26 17:10:58 [INFO] [AdjudicationAgent] Adjudicating Case File [21/21] for target Entity: ACC_UTURN_ANCHOR_24
+2026-05-26 17:10:58 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_24
+2026-05-26 17:12:09 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:12:09 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_24. Payload Response matches:
+2026-05-26 17:12:09 [INFO] [AdjudicationAgent] CONTINUOUS ADJUDICATION PIPELINE RUN CONCLUDED. Permanent file log state: data/processed/adjudication_agent.log
+2026-05-26 17:21:19 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 17:21:19 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-26 17:21:19 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 17:21:19 [INFO] [faiss.loader] Loading faiss with AVX2 support.
+2026-05-26 17:21:19 [INFO] [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-26 17:21:19 [INFO] [AdjudicationAgent] STARTING AGENTIC REASONING CONTINUOUS ADJUDICATION CYCLE
+2026-05-26 17:21:19 [INFO] [AdjudicationAgent] Initiating governance health-check on local LLM: 'mistral'
+2026-05-26 17:21:22 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:21:22 [INFO] [AdjudicationAgent] Handshake complete. Local LLM status response: 'READY'
+2026-05-26 17:21:22 [INFO] [AdjudicationAgent] Establishing zero-IPC session with in-process OLAP engine: data/processed/argus_research.db
+2026-05-26 17:21:22 [INFO] [AdjudicationAgent] Computing mathematical graph matrices via vectorized relational engine...
+2026-05-26 17:21:23 [INFO] [AdjudicationAgent] Topological extraction complete. Found 21 structural path loops matches.
+2026-05-26 17:21:23 [INFO] [AdjudicationAgent] Hydrating semantic context indices from local path: data/processed/vector_metadata.json
+2026-05-26 17:21:23 [INFO] [AdjudicationAgent] Successfully cached 100 customer risk documentation map elements in RAM.
+2026-05-26 17:21:23 [INFO] [AdjudicationAgent] Adjudicating Case File [1/21] for target Entity: ACC_UTURN_ANCHOR_0
+2026-05-26 17:21:23 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_0
+2026-05-26 17:22:49 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:22:49 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_0. Payload Response matches:
+2026-05-26 17:22:49 [INFO] [AdjudicationAgent] Adjudicating Case File [2/21] for target Entity: ACC_UTURN_ANCHOR_1
+2026-05-26 17:22:49 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_1
+2026-05-26 17:24:02 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:24:02 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_1. Payload Response matches:
+2026-05-26 17:24:02 [INFO] [AdjudicationAgent] Adjudicating Case File [3/21] for target Entity: ACC_UTURN_ANCHOR_2
+2026-05-26 17:24:02 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_2
+2026-05-26 17:25:15 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:25:15 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_2. Payload Response matches:
+2026-05-26 17:25:15 [INFO] [AdjudicationAgent] Adjudicating Case File [4/21] for target Entity: ACC_UTURN_ANCHOR_3
+2026-05-26 17:25:15 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_3
+2026-05-26 17:26:31 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:26:31 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_3. Payload Response matches:
+2026-05-26 17:26:31 [INFO] [AdjudicationAgent] Adjudicating Case File [5/21] for target Entity: ACC_UTURN_ANCHOR_4
+2026-05-26 17:26:31 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_4
+2026-05-26 17:27:50 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:27:50 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_4. Payload Response matches:
+2026-05-26 17:27:50 [INFO] [AdjudicationAgent] Adjudicating Case File [6/21] for target Entity: ACC_UTURN_ANCHOR_5
+2026-05-26 17:27:50 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_5
+2026-05-26 17:29:04 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:29:04 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_5. Payload Response matches:
+2026-05-26 17:29:04 [INFO] [AdjudicationAgent] Adjudicating Case File [7/21] for target Entity: ACC_UTURN_ANCHOR_6
+2026-05-26 17:29:04 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_6
+2026-05-26 17:30:18 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:30:18 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_6. Payload Response matches:
+2026-05-26 17:30:18 [INFO] [AdjudicationAgent] Adjudicating Case File [8/21] for target Entity: ACC_UTURN_ANCHOR_8
+2026-05-26 17:30:18 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_8
+2026-05-26 17:31:29 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:31:29 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_8. Payload Response matches:
+2026-05-26 17:31:29 [INFO] [AdjudicationAgent] Adjudicating Case File [9/21] for target Entity: ACC_UTURN_ANCHOR_9
+2026-05-26 17:31:29 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_9
+2026-05-26 17:32:51 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:32:51 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_9. Payload Response matches:
+2026-05-26 17:32:51 [INFO] [AdjudicationAgent] Adjudicating Case File [10/21] for target Entity: ACC_UTURN_ANCHOR_11
+2026-05-26 17:32:51 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_11
+2026-05-26 17:34:05 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:34:05 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_11. Payload Response matches:
+2026-05-26 17:34:05 [INFO] [AdjudicationAgent] Adjudicating Case File [11/21] for target Entity: ACC_UTURN_ANCHOR_13
+2026-05-26 17:34:05 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_13
+2026-05-26 17:35:21 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:35:21 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_13. Payload Response matches:
+2026-05-26 17:35:21 [INFO] [AdjudicationAgent] Adjudicating Case File [12/21] for target Entity: ACC_UTURN_ANCHOR_15
+2026-05-26 17:35:21 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_15
+2026-05-26 17:36:35 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:36:35 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_15. Payload Response matches:
+2026-05-26 17:36:35 [INFO] [AdjudicationAgent] Adjudicating Case File [13/21] for target Entity: ACC_UTURN_ANCHOR_16
+2026-05-26 17:36:35 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_16
+2026-05-26 17:37:53 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:37:53 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_16. Payload Response matches:
+2026-05-26 17:37:53 [INFO] [AdjudicationAgent] Adjudicating Case File [14/21] for target Entity: ACC_UTURN_ANCHOR_17
+2026-05-26 17:37:53 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_17
+2026-05-26 17:39:08 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:39:08 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_17. Payload Response matches:
+2026-05-26 17:39:08 [INFO] [AdjudicationAgent] Adjudicating Case File [15/21] for target Entity: ACC_UTURN_ANCHOR_18
+2026-05-26 17:39:08 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_18
+2026-05-26 17:40:23 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:40:23 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_18. Payload Response matches:
+2026-05-26 17:40:23 [INFO] [AdjudicationAgent] Adjudicating Case File [16/21] for target Entity: ACC_UTURN_ANCHOR_19
+2026-05-26 17:40:23 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_19
+2026-05-26 17:41:38 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:41:38 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_19. Payload Response matches:
+2026-05-26 17:41:38 [INFO] [AdjudicationAgent] Adjudicating Case File [17/21] for target Entity: ACC_UTURN_ANCHOR_20
+2026-05-26 17:41:38 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_20
+2026-05-26 17:42:51 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:42:51 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_20. Payload Response matches:
+2026-05-26 17:42:51 [INFO] [AdjudicationAgent] Adjudicating Case File [18/21] for target Entity: ACC_UTURN_ANCHOR_21
+2026-05-26 17:42:51 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_21
+2026-05-26 17:44:08 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:44:08 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_21. Payload Response matches:
+2026-05-26 17:44:08 [INFO] [AdjudicationAgent] Adjudicating Case File [19/21] for target Entity: ACC_UTURN_ANCHOR_22
+2026-05-26 17:44:08 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_22
+2026-05-26 17:45:22 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:45:22 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_22. Payload Response matches:
+2026-05-26 17:45:22 [INFO] [AdjudicationAgent] Adjudicating Case File [20/21] for target Entity: ACC_UTURN_ANCHOR_23
+2026-05-26 17:45:22 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_23
+2026-05-26 17:46:36 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:46:36 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_23. Payload Response matches:
+2026-05-26 17:46:36 [INFO] [AdjudicationAgent] Adjudicating Case File [21/21] for target Entity: ACC_UTURN_ANCHOR_24
+2026-05-26 17:46:36 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_24
+2026-05-26 17:47:52 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 17:47:52 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_24. Payload Response matches:
+2026-05-26 17:47:52 [INFO] [AdjudicationAgent] CONTINUOUS ADJUDICATION PIPELINE RUN CONCLUDED. Permanent file log state: data/processed/adjudication_agent.log
+2026-05-26 18:05:05 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 18:05:05 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-26 18:05:05 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-26 18:05:05 [INFO] [faiss.loader] Loading faiss with AVX2 support.
+2026-05-26 18:05:05 [INFO] [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-26 18:05:06 [INFO] [AdjudicationAgent] STARTING AGENTIC REASONING CONTINUOUS ADJUDICATION CYCLE
+2026-05-26 18:05:06 [INFO] [AdjudicationAgent] Initiating governance health-check on local LLM: 'mistral'
+2026-05-26 18:05:08 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:05:08 [INFO] [AdjudicationAgent] Handshake complete. Local LLM status response: 'READY'
+2026-05-26 18:05:08 [INFO] [AdjudicationAgent] Establishing zero-IPC session with in-process OLAP engine: data/processed/argus_research.db
+2026-05-26 18:05:08 [INFO] [AdjudicationAgent] Ensuring target persistence schema exists in DuckDB instance...
+2026-05-26 18:05:08 [INFO] [AdjudicationAgent] Computing mathematical graph matrices via vectorized relational engine...
+2026-05-26 18:05:08 [INFO] [AdjudicationAgent] Topological extraction complete. Found 21 structural path loops matches.
+2026-05-26 18:05:08 [INFO] [AdjudicationAgent] Hydrating semantic context indices from local path: data/processed/vector_metadata.json
+2026-05-26 18:05:08 [INFO] [AdjudicationAgent] Successfully cached 100 customer risk documentation map elements in RAM.
+2026-05-26 18:05:08 [INFO] [AdjudicationAgent] Adjudicating Case File [1/21] for target Entity: ACC_UTURN_ANCHOR_0
+2026-05-26 18:05:08 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_0
+2026-05-26 18:06:30 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:06:30 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_0. Payload Response matches:
+2026-05-26 18:06:30 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_0 into DuckDB database.
+2026-05-26 18:06:30 [INFO] [AdjudicationAgent] Adjudicating Case File [2/21] for target Entity: ACC_UTURN_ANCHOR_1
+2026-05-26 18:06:30 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_1
+2026-05-26 18:07:46 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:07:46 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_1. Payload Response matches:
+2026-05-26 18:07:46 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_1 into DuckDB database.
+2026-05-26 18:07:46 [INFO] [AdjudicationAgent] Adjudicating Case File [3/21] for target Entity: ACC_UTURN_ANCHOR_2
+2026-05-26 18:07:46 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_2
+2026-05-26 18:09:01 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:09:01 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_2. Payload Response matches:
+2026-05-26 18:09:01 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_2 into DuckDB database.
+2026-05-26 18:09:01 [INFO] [AdjudicationAgent] Adjudicating Case File [4/21] for target Entity: ACC_UTURN_ANCHOR_3
+2026-05-26 18:09:01 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_3
+2026-05-26 18:10:19 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:10:19 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_3. Payload Response matches:
+2026-05-26 18:10:19 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_3 into DuckDB database.
+2026-05-26 18:10:19 [INFO] [AdjudicationAgent] Adjudicating Case File [5/21] for target Entity: ACC_UTURN_ANCHOR_4
+2026-05-26 18:10:19 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_4
+2026-05-26 18:11:30 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:11:30 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_4. Payload Response matches:
+2026-05-26 18:11:30 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_4 into DuckDB database.
+2026-05-26 18:11:30 [INFO] [AdjudicationAgent] Adjudicating Case File [6/21] for target Entity: ACC_UTURN_ANCHOR_5
+2026-05-26 18:11:30 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_5
+2026-05-26 18:12:47 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:12:47 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_5. Payload Response matches:
+2026-05-26 18:12:47 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_5 into DuckDB database.
+2026-05-26 18:12:47 [INFO] [AdjudicationAgent] Adjudicating Case File [7/21] for target Entity: ACC_UTURN_ANCHOR_6
+2026-05-26 18:12:47 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_6
+2026-05-26 18:14:03 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:14:03 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_6. Payload Response matches:
+2026-05-26 18:14:03 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_6 into DuckDB database.
+2026-05-26 18:14:03 [INFO] [AdjudicationAgent] Adjudicating Case File [8/21] for target Entity: ACC_UTURN_ANCHOR_8
+2026-05-26 18:14:03 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_8
+2026-05-26 18:15:15 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:15:15 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_8. Payload Response matches:
+2026-05-26 18:15:15 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_8 into DuckDB database.
+2026-05-26 18:15:15 [INFO] [AdjudicationAgent] Adjudicating Case File [9/21] for target Entity: ACC_UTURN_ANCHOR_9
+2026-05-26 18:15:15 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_9
+2026-05-26 18:16:28 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:16:28 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_9. Payload Response matches:
+2026-05-26 18:16:28 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_9 into DuckDB database.
+2026-05-26 18:16:28 [INFO] [AdjudicationAgent] Adjudicating Case File [10/21] for target Entity: ACC_UTURN_ANCHOR_11
+2026-05-26 18:16:28 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_11
+2026-05-26 18:17:42 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:17:42 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_11. Payload Response matches:
+2026-05-26 18:17:42 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_11 into DuckDB database.
+2026-05-26 18:17:42 [INFO] [AdjudicationAgent] Adjudicating Case File [11/21] for target Entity: ACC_UTURN_ANCHOR_13
+2026-05-26 18:17:42 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_13
+2026-05-26 18:18:59 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:18:59 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_13. Payload Response matches:
+2026-05-26 18:18:59 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_13 into DuckDB database.
+2026-05-26 18:18:59 [INFO] [AdjudicationAgent] Adjudicating Case File [12/21] for target Entity: ACC_UTURN_ANCHOR_15
+2026-05-26 18:18:59 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_15
+2026-05-26 18:20:15 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:20:15 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_15. Payload Response matches:
+2026-05-26 18:20:15 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_15 into DuckDB database.
+2026-05-26 18:20:15 [INFO] [AdjudicationAgent] Adjudicating Case File [13/21] for target Entity: ACC_UTURN_ANCHOR_16
+2026-05-26 18:20:15 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_16
+2026-05-26 18:21:32 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:21:32 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_16. Payload Response matches:
+2026-05-26 18:21:32 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_16 into DuckDB database.
+2026-05-26 18:21:32 [INFO] [AdjudicationAgent] Adjudicating Case File [14/21] for target Entity: ACC_UTURN_ANCHOR_17
+2026-05-26 18:21:32 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_17
+2026-05-26 18:22:45 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:22:45 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_17. Payload Response matches:
+2026-05-26 18:22:45 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_17 into DuckDB database.
+2026-05-26 18:22:45 [INFO] [AdjudicationAgent] Adjudicating Case File [15/21] for target Entity: ACC_UTURN_ANCHOR_18
+2026-05-26 18:22:45 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_18
+2026-05-26 18:23:58 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:23:58 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_18. Payload Response matches:
+2026-05-26 18:23:58 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_18 into DuckDB database.
+2026-05-26 18:23:58 [INFO] [AdjudicationAgent] Adjudicating Case File [16/21] for target Entity: ACC_UTURN_ANCHOR_19
+2026-05-26 18:23:58 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_19
+2026-05-26 18:25:16 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:25:16 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_19. Payload Response matches:
+2026-05-26 18:25:16 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_19 into DuckDB database.
+2026-05-26 18:25:16 [INFO] [AdjudicationAgent] Adjudicating Case File [17/21] for target Entity: ACC_UTURN_ANCHOR_20
+2026-05-26 18:25:16 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_20
+2026-05-26 18:26:27 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:26:27 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_20. Payload Response matches:
+2026-05-26 18:26:27 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_20 into DuckDB database.
+2026-05-26 18:26:27 [INFO] [AdjudicationAgent] Adjudicating Case File [18/21] for target Entity: ACC_UTURN_ANCHOR_21
+2026-05-26 18:26:27 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_21
+2026-05-26 18:27:41 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:27:41 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_21. Payload Response matches:
+2026-05-26 18:27:41 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_21 into DuckDB database.
+2026-05-26 18:27:41 [INFO] [AdjudicationAgent] Adjudicating Case File [19/21] for target Entity: ACC_UTURN_ANCHOR_22
+2026-05-26 18:27:41 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_22
+2026-05-26 18:29:00 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:29:00 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_22. Payload Response matches:
+2026-05-26 18:29:00 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_22 into DuckDB database.
+2026-05-26 18:29:00 [INFO] [AdjudicationAgent] Adjudicating Case File [20/21] for target Entity: ACC_UTURN_ANCHOR_23
+2026-05-26 18:29:00 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_23
+2026-05-26 18:30:15 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:30:15 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_23. Payload Response matches:
+2026-05-26 18:30:15 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_23 into DuckDB database.
+2026-05-26 18:30:15 [INFO] [AdjudicationAgent] Adjudicating Case File [21/21] for target Entity: ACC_UTURN_ANCHOR_24
+2026-05-26 18:30:15 [INFO] [AdjudicationAgent] Submitting execution prompt to token-locked LLM local workspace for account: ACC_UTURN_ANCHOR_24
+2026-05-26 18:31:30 [INFO] [httpx] HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2026-05-26 18:31:30 [INFO] [AdjudicationAgent] Inference complete for case account ACC_UTURN_ANCHOR_24. Payload Response matches:
+2026-05-26 18:31:30 [INFO] [AdjudicationAgent] Successfully committed auditable relational verdict for ACC_UTURN_ANCHOR_24 into DuckDB database.
+2026-05-26 18:31:30 [INFO] [AdjudicationAgent] CONTINUOUS ADJUDICATION PIPELINE RUN CONCLUDED. Permanent file log state: data/processed/adjudication_agent.log
+2026-05-26 18:31:30 [INFO] [AdjudicationAgent] Session closed securely with in-process OLAP engine.

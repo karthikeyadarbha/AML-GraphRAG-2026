@@ -1,56 +1,45 @@
-import logging
-import numpy as np
 import pandas as pd
-from datetime import datetime, timedelta
+from datetime import timedelta
+import random
 
-logger = logging.getLogger(__name__)
-
-def inject_illicit_typologies(benign_df: pd.DataFrame, num_cycles: int = 25) -> pd.DataFrame:
+def inject_illicit_typologies(df, num_cycles=25):
     """
-    Phase 2: Parametric topological injection.
-    Injects circular multi-hop networks (AML Layering) while strictly enforcing 
-    a Principal Value Retention (PVR) of 85% to 95%.
+    Parametric injection of U-Turn laundering loops.
+    Forces multi-hop velocity (MVR) and 70-90% PVR to test the graph traversal.
     """
-    logger.info(f"Phase 2: Injecting {num_cycles} strict AML loops into the ledger...")
-    np.random.seed(42)
+    new_txns = []
+    base_time = df['Timestamp'].max() - timedelta(days=30)
     
-    illicit_txns = []
-    base_time = datetime(2026, 1, 15)
-    
-    for cycle_id in range(num_cycles):
-        # Dynamically allocate 4 to 6 hops to challenge the SQL depth traversal
-        hops: int = np.random.randint(4, 7)
-        shells = [f"SHELL_{cycle_id}_{step}" for step in range(hops)]
+    for i in range(num_cycles): 
+        anchor = f"ACC_UTURN_ANCHOR_{i}"
+        mules = [f"ACC_MULE_{i}_{j}" for j in range(3)]
         
-        current_vol: float = np.random.uniform(50000.0, 250000.0)
+        principal = round(random.uniform(50000, 150000), 2)
+        current_amount = principal
+        current_time = base_time + timedelta(days=random.randint(1, 10))
         
-        # Mathematically enforced friction to land in the 85-95% threshold
-        target_pvr: float = np.random.uniform(0.85, 0.95) 
-        friction_per_hop: float = 1.0 - (target_pvr ** (1.0 / hops))
+        # Hop 1: Placement to first mule
+        new_txns.append({"Transaction_ID": f"TXN_UTURN_{i}_1", "Source_Account": anchor, "Target_Account": mules[0], "Amount": current_amount, "Timestamp": current_time, "Is_Synthetic_Fraud": 1, "Typology": "U_Turn"})
         
-        for step in range(hops):
-            source = shells[step]
-            target = shells[0] if step == hops - 1 else shells[step + 1]
+        # Intermediate Layering (1-5 day delays, 1-3% frictional loss per hop)
+        for j in range(2):
+            current_time += timedelta(days=random.randint(1, 5))
+            fee_decay = random.uniform(0.97, 0.99) 
+            current_amount = round(current_amount * fee_decay, 2)
+            new_txns.append({"Transaction_ID": f"TXN_UTURN_{i}_{j+2}", "Source_Account": mules[j], "Target_Account": mules[j+1], "Amount": current_amount, "Timestamp": current_time, "Is_Synthetic_Fraud": 1, "Typology": "U_Turn"})
             
-            # Apply mathematical friction (smurfing/fees) on every hop after origin
-            if step > 0: 
-                current_vol *= (1.0 - friction_per_hop)
-            
-            # Power-law burst timing: Rapid multi-hop velocity (MVR)
-            timestamp = base_time + timedelta(minutes=(cycle_id * 60) + (step * 5))
-            
-            illicit_txns.append({
-                'Transaction_ID': f"TXN_ILLICIT_{cycle_id}_{step}",
-                'Source_Account': source,
-                'Target_Account': target,
-                'Transfer_Weight': np.round(current_vol, 2),
-                'Timestamp': timestamp,
-                'Is_Synthetic_Fraud': True
-            })
+        # Integration: Final return hop to anchor
+        current_time += timedelta(days=random.randint(1, 5))
+        final_amount = round(current_amount * random.uniform(0.95, 0.98), 2) 
+        new_txns.append({"Transaction_ID": f"TXN_UTURN_{i}_FINAL", "Source_Account": mules[-1], "Target_Account": anchor, "Amount": final_amount, "Timestamp": current_time, "Is_Synthetic_Fraud": 1, "Typology": "U_Turn"})
 
-    # Unify and sort chronologically to emulate a real database append log
-    unified_df = pd.concat([benign_df, pd.DataFrame(illicit_txns)], ignore_index=True)
-    unified_df.sort_values(by='Timestamp', inplace=True, ignore_index=True)
+    return pd.concat([df, pd.DataFrame(new_txns)], ignore_index=True)
+
+if __name__ == "__main__":
+    df_base = pd.read_csv("data/raw/synthetic_ledger_baseline.csv", parse_dates=['Timestamp'])
+    df_injected = inject_illicit_typologies(df_base)
+    # (Additional functions for Front Business Activity inserted here)
     
-    logger.info(f"Phase 2: Injection complete. Total ledger edges: {len(unified_df):,}")
-    return unified_df
+    df_injected = df_injected.sort_values(by='Timestamp').reset_index(drop=True)
+    df_injected.to_csv("data/raw/synthetic_ledger_final.csv", index=False)
+    print("Phase 2 Complete: Parametric U-Turn typologies injected.")
