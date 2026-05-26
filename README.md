@@ -129,3 +129,6 @@ python scripts/execute_adjudication_agent.py --disable-llm
 ```
 
 If you need help installing or troubleshooting Ollama, consult the official docs: https://ollama.ai
+
+
+Manuscript Reference: https://www.overleaf.com/project/69ba9cfa964e697815da0e18
