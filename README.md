@@ -1,134 +1,110 @@
-# Engineering Determinism in Generative AI: Agentic GraphRAG for Multi-Hop Financial Networks
+# AML GraphRAG 2026
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![DuckDB](https://img.shields.io/badge/DuckDB-In--Process-orange.svg)](https://duckdb.org/)
 
-This repository contains the official implementation of the Agentic GraphRAG architecture for deterministic Anti-Money Laundering (AML) risk assessment. 
+This repository contains the Agentic GraphRAG implementation for deterministic AML adjudication using hybrid DuckDB graph reasoning, semantic synthesis, and local LLM adjudication.
 
-By replacing external vector dependencies with an embedded DuckDB columnar engine, this system performs native Vector Similarity Search (VSS) alongside deterministic graph traversal. The architecture extracts mathematical proofs of illicit intent and fuses them with semantic intelligence to bound a local Large Language Model, eliminating stochastic hallucination in financial compliance.
+The current workflow synthesizes a benchmark dataset, materializes it into DuckDB, and executes an adjudication agent that persists audit-grade verdicts in `data/processed/aml_graphrag_adjudication.db`.
 
-## 🎯 Core Objectives
+## 🔧 Current implementation
 
-1. Eliminate Topological Blindness: Overcome the limitations of traditional Retrieval-Augmented Generation (RAG) by enabling the system to reason autonomously across complex, multi-hop transaction networks (e.g., circular layering and smurfing).
-2. Engineer Strict Determinism: Decouple mathematical discovery from generative reasoning. Force the LLM to act strictly as a logic gate (T=0.0) rather than a creative generator.
-3. Zero-Egress Security: Maintain absolute data privacy and regulatory compliance by executing all graph traversal, vector similarity mapping, and LLM adjudication locally within an air-gapped environment.
-4. Auditable Explainability: Provide a transparent, "Glass-Box" alternative to traditional black-box Graph Neural Networks (GNNs) by outputting mathematically proven Suspicious Activity Reports (SARs).
+- `scripts/run_data_pipeline.py`: generates the synthetic dataset and validates benchmark coverage.
+- `scripts/materialize_research_data.py`: loads raw files into DuckDB tables.
+- `scripts/execute_adjudication_agent.py`: executes adjudication and persists results in DuckDB.
+- `tests/test_statistical_validation.py`: verifies `Risk_Level` coverage and dataset rigor.
+- `tests/test_case_type_integrity.py`: verifies `Case_Type` integrity.
+- Persistence target: `data/processed/aml_graphrag_adjudication.db`.
+- Logs: `data/processed/adjudication_agent.log`.
 
-## 🏆 Key Achievements & Benchmarks
+## 📁 Pipeline overview
 
-The Agentic GraphRAG implementation was benchmarked against a baseline Standard RAG pipeline using a synthetically generated financial dataset containing 50 distinct test cases (25 layering, 25 smurfing).
+1. `scripts/run_data_pipeline.py`
+   - Builds the synthetic ledger baseline.
+   - Injects benchmark risk scenarios.
+   - Synthesizes semantic KYC/adverse-media context.
+   - Runs statistical validation with hard failure on missing benchmark `Risk_Level` coverage.
+   - Writes raw outputs under `data/raw/`.
 
-* 100% Cycle Detection Recall: Successfully retrieved complete transaction nodes for 3+ hop loops, compared to the baseline's 18.5%.
-* 98.5% Consolidation Precision: Accurately identified aggregation/smurfing typologies, compared to the baseline's 32.0%.
-* 0% Adjudication Consistency Variance: Achieved perfect determinism across 50 execution runs per case, eliminating the 14% variance seen in standard generative pipelines.
-* 99.8% SAR Parse Success: Generated highly reproducible outputs adhering to strict JSON schema validation.
+2. `scripts/materialize_research_data.py`
+   - Reads generated `data/raw/*` assets.
+   - Creates DuckDB tables in `data/processed/aml_graphrag_adjudication.db`.
+   - Materializes tables such as `raw_ledger`, `kyc_profiles`, and `adverse_media`.
 
-## 🧮 Mathematical Foundations
+3. `scripts/execute_adjudication_agent.py`
+   - Loads `data/processed/aml_graphrag_adjudication.db`.
+   - Ensures `Adjudication_Results` exists.
+   - Adds or validates the `Case_Type` column.
+   - Persists each adjudication verdict permanently.
+   - Writes agent logs to `data/processed/adjudication_agent.log`.
 
-This architecture utilizes specific structural metrics executed via SQL Common Table Expressions (CTEs) in DuckDB to mathematically prove economic friction loss and consolidation severity.
+## 🚀 Run the updated pipeline
 
-Principal Value Retention (PVR) for Circular Layering:
-PVR = (V_return / V_initial) * 100
-
-Consolidation Ratio (p) for Aggregation Typologies:
-p = (V_sink / SUM(V_source_i)) * 100
-
-## ⚙️ Implementation Procedures
-
-### 1. Prerequisites
-* Python 3.10+
-* DuckDB (duckdb python package)
-* Sentence Transformers (all-MiniLM-L6-v2)
-* Local LLM Runner (e.g., Ollama running mistral-7b-instruct)
-
-### 2. Installation
-Clone the repository and install the required dependencies:
-
-git clone https://github.com/yourusername/agentic-graphrag-aml.git
-cd agentic-graphrag-aml
-pip install -r requirements.txt
-
-### 3. Pipeline Execution Steps
-
-1. Data Ingestion & Indexing (1_ingest_data.py):
-   * Initializes the DuckDB instance.
-   * Ingests the synthetic transaction multigraph G=(V,E).
-   * Generates dense vector embeddings (d=384) for unstructured adverse media using all-MiniLM-L6-v2 and stores them as DuckDB FLOAT arrays.
-   
-2. Topological Traversal (2_graph_traversal.sql):
-   * Executes deterministic recursive CTEs to identify subgraphs matching known AML typologies bounded by temporal latency.
-   * Calculates structural metrics including PVR and consolidation ratios.
-
-3. Semantic Motive Discovery (3_vss_retrieval.py):
-   * Executes in-process Vector Similarity Search to calculate the Euclidean distance between the embedded query vector (p) and the stored intelligence vectors (q):
-   d(p,q) = SQRT( SUM((p_i - q_i)^2) )
-
-4. Deterministic Adjudication (4_agentic_adjudication.py):
-   * Fuses the DuckDB structural math with the VSS-retrieved semantic context.
-   * Dispatches the structured prompt matrix to the local Mistral-7B model with a strictly bounded sampling temperature.
-   * Outputs the final, auditable SAR JSON payload.
-
-### 4. Running the Demo
-To execute the end-to-end pipeline on the provided synthetic dataset:
-
-python main.py --mode evaluate --typology all
-
-
-## 📄 Citation
-
-If you use this architecture or codebase in your research, please cite the accompanying paper:
-
-@article{darbha2026agentic,
-  title={Engineering Determinism in Generative AI: Agentic GraphRAG for Multi-Hop Financial Networks},
-  author={Darbha, Kartheek},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2026}
-}
-
-## 🔒 Data Privacy Notice
-This repository contains only synthetic data generated strictly for testing purposes. No real Personally Identifiable Information (PII), proprietary corporate data, or live financial transaction records are included in this codebase.
-
-## 🧠 Running a Local LLM (Ollama)
-
-This project is designed to use a local LLM served via Ollama at `http://localhost:11434` for adjudication. If you plan to run the full pipeline with model-based adjudication, follow these quick steps.
-
-1. Ensure the `ollama` CLI is installed. On macOS/Linux you can run:
+### 1. Generate synthetic data
 
 ```bash
-curl -fsSL https://ollama.com/install.sh | sh
+./aml-grag/bin/python scripts/run_data_pipeline.py
 ```
 
-2. Start the Ollama server and pull the desired model (defaults to `mistral`). A convenience script is provided:
+### 2. Materialize DuckDB tables
 
 ```bash
-./scripts/start_ollama.sh [model_name]
-# example: ./scripts/start_ollama.sh mistral
+./aml-grag/bin/python scripts/materialize_research_data.py
 ```
 
-The script will:
-- Start the Ollama daemon (`ollama serve`) if it's not already running.
-- Pull the requested model if it's not available locally.
-
-3. Verify the API is reachable:
+### 3. Execute adjudication
 
 ```bash
-curl -sSf http://127.0.0.1:11434/api/tags
+./aml-grag/bin/python scripts/execute_adjudication_agent.py
 ```
 
-4. Run the adjudication pipeline using the health-check flag to automatically fall back if Ollama is unreachable:
+If you want a safe LLM health-check before full adjudication:
 
 ```bash
-python scripts/execute_adjudication_agent.py --health-check-llm
+./aml-grag/bin/python scripts/execute_adjudication_agent.py --health-check-llm
 ```
 
-If you do not want to use the LLM and prefer deterministic rule-based adjudication, run with:
+## 🧪 Tests
+
+Run the regression tests for the current pipeline:
 
 ```bash
-python scripts/execute_adjudication_agent.py --disable-llm
+./aml-grag/bin/python -m pytest tests/test_statistical_validation.py -q
+./aml-grag/bin/python -m pytest tests/test_case_type_integrity.py -q
 ```
 
-If you need help installing or troubleshooting Ollama, consult the official docs: https://ollama.ai
+## 📌 Persistence details
 
+Active database:
 
-Manuscript Reference: https://www.overleaf.com/project/69ba9cfa964e697815da0e18
+```text
+data/processed/aml_graphrag_adjudication.db
+```
+
+Persistent log file:
+
+```text
+data/processed/adjudication_agent.log
+```
+
+The adjudication agent writes a permanent `Adjudication_Results` table and preserves `Case_Type` values.
+
+## ⚠️ Important note
+
+Current code references only `aml_graphrag_adjudication.db`. Any legacy mentions of `argus_research.db` or older DB names are historical log artifacts, not active persistence targets.
+
+## ℹ️ Troubleshooting
+
+If DuckDB reports a locked database, verify that no other process is currently using `data/processed/aml_graphrag_adjudication.db`, then rerun the materialization or adjudication steps.
+
+## 📌 Recommended workflow
+
+1. `./aml-grag/bin/python scripts/run_data_pipeline.py`
+2. `./aml-grag/bin/python scripts/materialize_research_data.py`
+3. `./aml-grag/bin/python scripts/execute_adjudication_agent.py`
+4. `./aml-grag/bin/python -m pytest tests/test_statistical_validation.py -q`
+
+## 🔒 Data privacy
+
+This repository is synthetic research-only data. No real PII or live financial records are included.

@@ -2136,3 +2136,107 @@ LINE 13:         FROM Financial_Ledger
 0   BENIGN_BASELINE          187      70.57         65         86                  0.0            186.0                1.0             0.0
 1  SUSPICIOUS_FRAUD          126      93.35         90         95                126.0              0.0                0.0             0.0
 2026-05-30 14:52:40 [INFO] [AdjudicationAgent] Session closed securely with in-process OLAP engine.
+2026-05-30 15:17:25 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-30 15:17:25 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-30 15:17:25 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-30 15:17:25 [INFO] [faiss.loader] Loading faiss with AVX2 support.
+2026-05-30 15:17:25 [INFO] [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-30 15:17:26 [INFO] [AdjudicationAgent] Data quality check passed: Case_Type is populated for all Adjudication_Results rows.
+2026-05-30 15:17:26 [ERROR] [AdjudicationAgent] Data quality violation: 1 Adjudication_Results rows have missing Case_Type values.
+2026-05-30 15:17:26 [INFO] [AdjudicationAgent] Data quality check passed: Case_Type is populated for all Adjudication_Results rows.
+2026-05-30 15:17:26 [ERROR] [AdjudicationAgent] Data quality violation: 1 Adjudication_Results rows have missing Case_Type values.
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Phase 4: Running Statistical Validation for Peer Review...
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] K-S Test p-value: 0.9332 (benign sample size: 2)
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] [PASS] Dataset statistically mirrors real-world log-normal distributions.
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Graph Complexity: 5 unique nodes | 4 directed edges.
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Illicit Density: 50.0000% (2 edges)
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Risk Level Distribution: {'LOW_RISK': 1, 'MEDIUM_RISK': 1, 'HIGH_RISK': 1, 'CRITICAL_RISK': 1}
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] [PASS] Standard benchmark risk levels covered by dataset synthesis.
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Phase 4: Running Statistical Validation for Peer Review...
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] K-S Test p-value: 0.9332 (benign sample size: 2)
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] [PASS] Dataset statistically mirrors real-world log-normal distributions.
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Graph Complexity: 5 unique nodes | 4 directed edges.
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Illicit Density: 50.0000% (2 edges)
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Phase 4: Running Statistical Validation for Peer Review...
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] K-S Test p-value: 0.9332 (benign sample size: 2)
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] [PASS] Dataset statistically mirrors real-world log-normal distributions.
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Graph Complexity: 4 unique nodes | 3 directed edges.
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Illicit Density: 33.3333% (1 edges)
+2026-05-30 15:17:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Risk Level Distribution: {'LOW_RISK': 1, 'MEDIUM_RISK': 1, 'HIGH_RISK': 1}
+2026-05-30 15:18:25 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-30 15:18:25 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-30 15:18:25 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-30 15:18:25 [INFO] [faiss.loader] Loading faiss with AVX2 support.
+2026-05-30 15:18:25 [INFO] [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-30 15:18:26 [WARNING] [AdjudicationAgent] Rule-based adjudication fallback engaged: test-fallback
+2026-05-30 15:18:26 [WARNING] [AdjudicationAgent] Rule-based adjudication fallback engaged: LLM unavailable
+2026-05-30 15:18:26 [INFO] [AdjudicationAgent] Data quality check passed: Case_Type is populated for all Adjudication_Results rows.
+2026-05-30 15:18:26 [ERROR] [AdjudicationAgent] Data quality violation: 1 Adjudication_Results rows have missing Case_Type values.
+2026-05-30 15:18:26 [INFO] [AdjudicationAgent] Data quality check passed: Case_Type is populated for all Adjudication_Results rows.
+2026-05-30 15:18:26 [ERROR] [AdjudicationAgent] Data quality violation: 1 Adjudication_Results rows have missing Case_Type values.
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Phase 4: Running Statistical Validation for Peer Review...
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] K-S Test p-value: 0.9332 (benign sample size: 2)
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] [PASS] Dataset statistically mirrors real-world log-normal distributions.
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Graph Complexity: 5 unique nodes | 4 directed edges.
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Illicit Density: 50.0000% (2 edges)
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Risk Level Distribution: {'LOW_RISK': 1, 'MEDIUM_RISK': 1, 'HIGH_RISK': 1, 'CRITICAL_RISK': 1}
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] [PASS] Standard benchmark risk levels covered by dataset synthesis.
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Phase 4: Running Statistical Validation for Peer Review...
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] K-S Test p-value: 0.9332 (benign sample size: 2)
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] [PASS] Dataset statistically mirrors real-world log-normal distributions.
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Graph Complexity: 5 unique nodes | 4 directed edges.
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Illicit Density: 50.0000% (2 edges)
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Phase 4: Running Statistical Validation for Peer Review...
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] K-S Test p-value: 0.9332 (benign sample size: 2)
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] [PASS] Dataset statistically mirrors real-world log-normal distributions.
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Graph Complexity: 4 unique nodes | 3 directed edges.
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Illicit Density: 33.3333% (1 edges)
+2026-05-30 15:18:26 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Risk Level Distribution: {'LOW_RISK': 1, 'MEDIUM_RISK': 1, 'HIGH_RISK': 1}
+2026-05-30 15:19:34 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-30 15:19:34 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-30 15:19:34 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-30 15:19:34 [INFO] [faiss.loader] Loading faiss with AVX2 support.
+2026-05-30 15:19:35 [INFO] [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-30 15:19:35 [WARNING] [AdjudicationAgent] Rule-based adjudication fallback engaged: test-fallback
+2026-05-30 15:19:35 [WARNING] [AdjudicationAgent] Rule-based adjudication fallback engaged: LLM unavailable
+2026-05-30 15:19:35 [INFO] [AdjudicationAgent] Data quality check passed: Case_Type is populated for all Adjudication_Results rows.
+2026-05-30 15:19:35 [ERROR] [AdjudicationAgent] Data quality violation: 1 Adjudication_Results rows have missing Case_Type values.
+2026-05-30 15:22:31 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-30 15:22:31 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-30 15:22:31 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-30 15:22:31 [WARNING] [AdjudicationAgent] FAISS library not detected in runtime path. Vector indexing operations will be bypassed.
+2026-05-30 15:22:31 [WARNING] [AdjudicationAgent] Ollama orchestration library missing. Ensure local inference engine is running via API.
+2026-05-30 15:22:48 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-30 15:22:48 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-30 15:22:48 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-30 15:22:48 [WARNING] [AdjudicationAgent] FAISS library not detected in runtime path. Vector indexing operations will be bypassed.
+2026-05-30 15:22:48 [WARNING] [AdjudicationAgent] Ollama orchestration library missing. Ensure local inference engine is running via API.
+2026-05-30 15:23:20 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-30 15:23:20 [INFO] [AdjudicationAgent] Logging infrastructure initialized. Active persistent file: data/processed/adjudication_agent.log
+2026-05-30 15:23:20 [INFO] [AdjudicationAgent] ====================================================================
+2026-05-30 15:23:20 [INFO] [faiss.loader] Loading faiss with AVX2 support.
+2026-05-30 15:23:20 [INFO] [faiss.loader] Successfully loaded faiss with AVX2 support.
+2026-05-30 15:23:21 [WARNING] [AdjudicationAgent] Rule-based adjudication fallback engaged: test-fallback
+2026-05-30 15:23:21 [WARNING] [AdjudicationAgent] Rule-based adjudication fallback engaged: LLM unavailable
+2026-05-30 15:23:21 [INFO] [AdjudicationAgent] Data quality check passed: Case_Type is populated for all Adjudication_Results rows.
+2026-05-30 15:23:21 [ERROR] [AdjudicationAgent] Data quality violation: 1 Adjudication_Results rows have missing Case_Type values.
+2026-05-30 15:23:21 [INFO] [AdjudicationAgent] Data quality check passed: Case_Type is populated for all Adjudication_Results rows.
+2026-05-30 15:23:21 [ERROR] [AdjudicationAgent] Data quality violation: 1 Adjudication_Results rows have missing Case_Type values.
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Phase 4: Running Statistical Validation for Peer Review...
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] K-S Test p-value: 0.9332 (benign sample size: 2)
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] [PASS] Dataset statistically mirrors real-world log-normal distributions.
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Graph Complexity: 5 unique nodes | 4 directed edges.
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Illicit Density: 50.0000% (2 edges)
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Risk Level Distribution: {'LOW_RISK': 1, 'MEDIUM_RISK': 1, 'HIGH_RISK': 1, 'CRITICAL_RISK': 1}
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] [PASS] Standard benchmark risk levels covered by dataset synthesis.
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Phase 4: Running Statistical Validation for Peer Review...
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] K-S Test p-value: 0.9332 (benign sample size: 2)
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] [PASS] Dataset statistically mirrors real-world log-normal distributions.
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Graph Complexity: 5 unique nodes | 4 directed edges.
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Illicit Density: 50.0000% (2 edges)
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Phase 4: Running Statistical Validation for Peer Review...
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] K-S Test p-value: 0.9332 (benign sample size: 2)
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] [PASS] Dataset statistically mirrors real-world log-normal distributions.
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Graph Complexity: 4 unique nodes | 3 directed edges.
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Illicit Density: 33.3333% (1 edges)
+2026-05-30 15:23:21 [INFO] [scripts.data_pipeline.phase4_statistical_validation] Risk Level Distribution: {'LOW_RISK': 1, 'MEDIUM_RISK': 1, 'HIGH_RISK': 1}

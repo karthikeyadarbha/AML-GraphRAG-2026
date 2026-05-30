@@ -58,6 +58,7 @@ logger.info(f"Logging infrastructure initialized. Active persistent file: {LOG_F
 logger.info("====================================================================")
 
 # Safe conditional imports for external platform components
+OLLAMA_AVAILABLE = True
 try:
     import faiss
 except ImportError:
@@ -66,7 +67,66 @@ except ImportError:
 try:
     import ollama
 except ImportError:
+    OLLAMA_AVAILABLE = False
     logger.warning("Ollama orchestration library missing. Ensure local inference engine is running via API.")
+
+
+def rule_based_adjudication(dossier, err_msg=None):
+    """Fallback deterministic adjudication logic when the LLM is unavailable."""
+    pvr = float(dossier.get("PVR_Percentage", 0))
+    semantic_context = str(dossier.get("Semantic_Context", "")).lower()
+
+    score = 10
+    verdict = "No SAR"
+
+    if pvr >= 90 and "high-risk" in semantic_context:
+        score = 92
+        verdict = "High Confidence SAR"
+    elif pvr >= 80:
+        score = 75
+        verdict = "Review Required"
+    elif pvr >= 60:
+        score = 55
+        verdict = "Medium Risk SAR"
+    else:
+        score = 10
+        verdict = "No SAR"
+
+    if err_msg:
+        logger.warning(f"Rule-based adjudication fallback engaged: {err_msg}")
+
+    return {
+        "Verdict": verdict,
+        "SAR_Confidence_Score": score,
+        "Frictional_Analysis": "Rule-based fallback assessment.",
+        "Temporal_Analysis": "Fallback temporal review.",
+        "Justification": "Adjudication based on PVR and semantic context in fallback path."
+    }
+
+
+def evaluate_dossier_with_llm(dossier, model_name="mistral"):
+    """Evaluate a dossier using the local LLM, with fallback to rule-based adjudication."""
+    if not OLLAMA_AVAILABLE:
+        return rule_based_adjudication(dossier, err_msg="LLM unavailable")
+
+    try:
+        prompt = json.dumps({
+            "PVR_Percentage": dossier.get("PVR_Percentage"),
+            "Semantic_Context": dossier.get("Semantic_Context", "")
+        })
+        response = ollama.generate(model=model_name, prompt=prompt, options={"temperature": 0.0})
+        raw = response.get("response", "")
+        parsed = json.loads(raw)
+        return {
+            "Verdict": parsed.get("Verdict", "No SAR"),
+            "SAR_Confidence_Score": int(parsed.get("SAR_Confidence_Score", 0)),
+            "Frictional_Analysis": parsed.get("Frictional_Analysis", ""),
+            "Temporal_Analysis": parsed.get("Temporal_Analysis", ""),
+            "Justification": parsed.get("Justification", "")
+        }
+    except Exception as e:
+        logger.warning(f"LLM evaluation failed, using rule-based fallback: {str(e)}")
+        return rule_based_adjudication(dossier, err_msg=str(e))
 
 
 # =====================================================================
