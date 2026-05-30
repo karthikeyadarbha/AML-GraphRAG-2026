@@ -1,0 +1,106 @@
+name: CI - Pipeline & Ollama
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install system prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl jq
+
+      - name: Install Python dependencies (best-effort)
+        run: |
+          python -m pip install --upgrade pip
+          # allow failure for platform-specific packages (faiss). tests/materialization don't require FAISS.
+          python -m pip install -r requirements.txt || echo "pip install failed for some packages; continuing"
+          python -m pip install pytest || true
+
+      - name: Run data pipeline (generate raw artifacts)
+        run: |
+          python scripts/run_data_pipeline.py
+
+      - name: Materialize DuckDB tables
+        run: |
+          python scripts/materialize_research_data.py
+
+      - name: Attempt to install Ollama (best-effort)
+        run: |
+          set -e
+          echo "Attempting Ollama install; will continue if this fails."
+          curl -fsSL https://ollama.com/install.sh | sh || echo "Ollama install failed or not supported in this environment"
+        continue-on-error: true
+
+      - name: Start Ollama (if available)
+        run: |
+          if command -v ollama >/dev/null 2>&1; then
+            echo "Starting ollama serve in background"
+            nohup ollama serve >/dev/null 2>&1 &
+            # give server time to start
+            sleep 5
+          else
+            echo "Ollama not installed"
+          fi
+
+      - name: Wait for Ollama endpoint
+        id: ollama_check
+        run: |
+          ENDPOINT="http://127.0.0.1:11434/api/tags"
+          SUCCESS=1
+          for i in {1..12}; do
+            if curl -sSf "$ENDPOINT" >/dev/null 2>&1; then
+              echo "ollama_ready=true" >> $GITHUB_OUTPUT
+              SUCCESS=0
+              break
+            fi
+            sleep 5
+          done
+          if [ $SUCCESS -ne 0 ]; then
+            echo "ollama_ready=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Initialize hybrid index (if FAISS available)
+        run: |
+          python - <<'PY'
+import importlib
+try:
+    importlib.import_module('faiss')
+    print('FAISS available: building index...')
+    import scripts.initialize_hybrid_indexes as mod
+    mod.build_hybrid_semantic_index()
+except Exception as e:
+    print('FAISS not available or index build failed:', e)
+PY
+
+      - name: Run adjudication agent (use Ollama if available)
+        run: |
+          if [ "${{ steps.ollama_check.outputs.ollama_ready }}" = "true" ]; then
+            python scripts/execute_adjudication_agent.py --health-check-llm
+          else
+            echo "Ollama unreachable; running deterministic rule-based fallback (--disable-llm)"
+            python scripts/execute_adjudication_agent.py --disable-llm
+          fi
+
+      - name: Run tests
+        run: |
+          python -m pytest -q
+
+      - name: Upload adjudication log artifact (if present)
+        uses: actions/upload-artifact@v4
+        with:
+          name: adjudication-log
+          path: data/processed/adjudication_agent.log
+          if-no-files-found: ignore
