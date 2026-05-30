@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 # Standardized Paths
 PROCESSED_DIR = Path("data/processed")
-DB_PATH = PROCESSED_DIR / "argus_research.db"
+DB_PATH = PROCESSED_DIR / "aml_graphrag_adjudication.db"
 FAISS_INDEX_PATH = PROCESSED_DIR / "vector_index.faiss"
 METADATA_PATH = PROCESSED_DIR / "vector_metadata.json"
 

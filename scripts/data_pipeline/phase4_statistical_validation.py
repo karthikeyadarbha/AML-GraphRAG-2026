@@ -38,4 +38,14 @@ def validate_dataset_rigor(df_ledger: pd.DataFrame) -> None:
     
     logger.info(f"Graph Complexity: {G.number_of_nodes():,} unique nodes | {G.number_of_edges():,} directed edges.")
     logger.info(f"Illicit Density: {illicit_ratio:.4f}% ({illicit_txns} edges)")
-    logger.info("[PASS] High-density, severely imbalanced dataset achieved for rigorous testing.")
+
+    if 'Risk_Level' in df_ledger.columns:
+        risk_counts = df_ledger['Risk_Level'].value_counts()
+        logger.info(f"Risk Level Distribution: {risk_counts.to_dict()}")
+        required_levels = ["LOW_RISK", "MEDIUM_RISK", "HIGH_RISK", "CRITICAL_RISK"]
+        missing_levels = [level for level in required_levels if level not in risk_counts.index]
+        if missing_levels:
+            raise AssertionError(f"Missing benchmark risk levels in generated data: {missing_levels}")
+        logger.info("[PASS] Standard benchmark risk levels covered by dataset synthesis.")
+    else:
+        raise AssertionError("Risk_Level column missing from dataset; cannot validate benchmark risk coverage.")

@@ -32,7 +32,9 @@ def generate_benign_haystack(num_accounts=5000, num_txns=50000):
             "Amount": amounts[i],
             "Timestamp": timestamps[i],
             "Is_Synthetic_Fraud": 0,
-            "Typology": "Standard_Retail"
+            "Typology": "Standard_Retail",
+            "Risk_Level": "LOW_RISK",
+            "Scenario_Label": "Standard_Retail"
         })
         
     df = pd.DataFrame(transactions)
@@ -44,10 +46,12 @@ def generate_benign_haystack(num_accounts=5000, num_txns=50000):
         idx = random.randint(0, num_txns - 1)
         df.at[idx, 'Amount'] = round(random.uniform(7500, 9999), 2)
         df.at[idx, 'Typology'] = "Counter_Leakage_Structuring"
+        df.at[idx, 'Risk_Level'] = "MEDIUM_RISK"
+        df.at[idx, 'Scenario_Label'] = "Counter_Leakage_Structuring"
         
     df.to_csv("data/raw/synthetic_ledger_baseline.csv", index=False)
     print("Phase 1 Complete: ABM Baseline generated with Counter-Leakage.")
     return df
 
 if __name__ == "__main__":
-    generate_baseline()
+    generate_benign_haystack()

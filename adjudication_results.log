@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspaces/AML-GraphRAG-2026/scripts/execute_adjudication_agent.py", line 15, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

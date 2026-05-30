@@ -7,7 +7,7 @@ import logging
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from data_pipeline.phase1_abm_baseline import generate_benign_haystack
-from data_pipeline.phase2_parametric_injection import inject_illicit_typologies
+from data_pipeline.phase2_parametric_injection import inject_synthesized_scenarios
 from data_pipeline.phase3_semantic_synthesis import synthesize_semantic_context
 from data_pipeline.phase4_statistical_validation import validate_dataset_rigor
 
@@ -26,7 +26,7 @@ if __name__ == "__main__":
     
     # Execute Pipeline
     df_benign = generate_benign_haystack(num_accounts=5000, num_txns=100000)
-    df_unified = inject_illicit_typologies(df_benign, num_cycles=25)
+    df_unified = inject_synthesized_scenarios(df_benign, num_u_turns=25, num_smurfing=20, num_front_business=15, num_low_risk=60)
     kyc_data, am_data = synthesize_semantic_context(df_unified)
     
     # Run Academic Validation

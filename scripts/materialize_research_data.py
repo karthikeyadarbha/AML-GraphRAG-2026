@@ -12,7 +12,7 @@ PROCESSED_DIR = Path("data/processed")
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
 # The target DuckDB database file
-DB_PATH = PROCESSED_DIR / "argus_research.db"
+DB_PATH = PROCESSED_DIR / "aml_graphrag_adjudication.db"
 
 def materialize_duckdb_environment():
     """

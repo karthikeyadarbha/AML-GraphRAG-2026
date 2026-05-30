@@ -6,7 +6,7 @@ import logging
 
 # Configuration
 DATA_DIR = Path("data/raw")
-DB_PATH = Path("data/processed/argus_research.db")
+DB_PATH = Path("data/processed/aml_graphrag_adjudication.db")
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)

@@ -598,5 +598,605 @@
         "Account_ID": "ACC_MULE_24_2",
         "Document_Type": "Suspicious_Activity_Report",
         "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000100",
+        "Account_ID": "ACC_SMURF_MULE_0_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000101",
+        "Account_ID": "ACC_SMURF_MULE_0_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000102",
+        "Account_ID": "ACC_SMURF_MULE_0_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000103",
+        "Account_ID": "ACC_SMURF_MULE_0_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000104",
+        "Account_ID": "ACC_SMURF_MULE_0_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000105",
+        "Account_ID": "ACC_SMURF_MULE_1_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000106",
+        "Account_ID": "ACC_SMURF_MULE_1_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000107",
+        "Account_ID": "ACC_SMURF_MULE_1_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000108",
+        "Account_ID": "ACC_SMURF_MULE_1_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000109",
+        "Account_ID": "ACC_SMURF_MULE_1_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000110",
+        "Account_ID": "ACC_SMURF_MULE_2_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000111",
+        "Account_ID": "ACC_SMURF_MULE_2_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000112",
+        "Account_ID": "ACC_SMURF_MULE_2_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000113",
+        "Account_ID": "ACC_SMURF_MULE_2_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000114",
+        "Account_ID": "ACC_SMURF_MULE_2_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000115",
+        "Account_ID": "ACC_SMURF_MULE_3_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000116",
+        "Account_ID": "ACC_SMURF_MULE_3_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000117",
+        "Account_ID": "ACC_SMURF_MULE_3_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000118",
+        "Account_ID": "ACC_SMURF_MULE_3_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000119",
+        "Account_ID": "ACC_SMURF_MULE_3_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000120",
+        "Account_ID": "ACC_SMURF_MULE_4_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000121",
+        "Account_ID": "ACC_SMURF_MULE_4_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000122",
+        "Account_ID": "ACC_SMURF_MULE_4_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000123",
+        "Account_ID": "ACC_SMURF_MULE_4_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000124",
+        "Account_ID": "ACC_SMURF_MULE_4_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000125",
+        "Account_ID": "ACC_SMURF_MULE_5_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000126",
+        "Account_ID": "ACC_SMURF_MULE_5_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000127",
+        "Account_ID": "ACC_SMURF_MULE_5_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000128",
+        "Account_ID": "ACC_SMURF_MULE_5_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000129",
+        "Account_ID": "ACC_SMURF_MULE_5_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000130",
+        "Account_ID": "ACC_SMURF_MULE_6_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000131",
+        "Account_ID": "ACC_SMURF_MULE_6_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000132",
+        "Account_ID": "ACC_SMURF_MULE_6_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000133",
+        "Account_ID": "ACC_SMURF_MULE_6_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000134",
+        "Account_ID": "ACC_SMURF_MULE_6_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000135",
+        "Account_ID": "ACC_SMURF_MULE_7_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000136",
+        "Account_ID": "ACC_SMURF_MULE_7_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000137",
+        "Account_ID": "ACC_SMURF_MULE_7_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000138",
+        "Account_ID": "ACC_SMURF_MULE_7_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000139",
+        "Account_ID": "ACC_SMURF_MULE_7_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000140",
+        "Account_ID": "ACC_SMURF_MULE_8_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000141",
+        "Account_ID": "ACC_SMURF_MULE_8_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000142",
+        "Account_ID": "ACC_SMURF_MULE_8_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000143",
+        "Account_ID": "ACC_SMURF_MULE_8_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000144",
+        "Account_ID": "ACC_SMURF_MULE_8_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000145",
+        "Account_ID": "ACC_SMURF_MULE_9_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000146",
+        "Account_ID": "ACC_SMURF_MULE_9_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000147",
+        "Account_ID": "ACC_SMURF_MULE_9_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000148",
+        "Account_ID": "ACC_SMURF_MULE_9_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000149",
+        "Account_ID": "ACC_SMURF_MULE_9_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000150",
+        "Account_ID": "ACC_SMURF_MULE_10_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000151",
+        "Account_ID": "ACC_SMURF_MULE_10_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000152",
+        "Account_ID": "ACC_SMURF_MULE_10_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000153",
+        "Account_ID": "ACC_SMURF_MULE_10_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000154",
+        "Account_ID": "ACC_SMURF_MULE_10_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000155",
+        "Account_ID": "ACC_SMURF_MULE_11_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000156",
+        "Account_ID": "ACC_SMURF_MULE_11_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000157",
+        "Account_ID": "ACC_SMURF_MULE_11_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000158",
+        "Account_ID": "ACC_SMURF_MULE_11_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000159",
+        "Account_ID": "ACC_SMURF_MULE_11_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000160",
+        "Account_ID": "ACC_SMURF_MULE_12_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000161",
+        "Account_ID": "ACC_SMURF_MULE_12_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000162",
+        "Account_ID": "ACC_SMURF_MULE_12_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000163",
+        "Account_ID": "ACC_SMURF_MULE_12_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000164",
+        "Account_ID": "ACC_SMURF_MULE_12_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000165",
+        "Account_ID": "ACC_SMURF_MULE_13_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000166",
+        "Account_ID": "ACC_SMURF_MULE_13_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000167",
+        "Account_ID": "ACC_SMURF_MULE_13_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000168",
+        "Account_ID": "ACC_SMURF_MULE_13_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000169",
+        "Account_ID": "ACC_SMURF_MULE_13_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000170",
+        "Account_ID": "ACC_SMURF_MULE_14_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000171",
+        "Account_ID": "ACC_SMURF_MULE_14_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000172",
+        "Account_ID": "ACC_SMURF_MULE_14_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000173",
+        "Account_ID": "ACC_SMURF_MULE_14_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000174",
+        "Account_ID": "ACC_SMURF_MULE_14_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000175",
+        "Account_ID": "ACC_SMURF_MULE_15_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000176",
+        "Account_ID": "ACC_SMURF_MULE_15_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000177",
+        "Account_ID": "ACC_SMURF_MULE_15_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000178",
+        "Account_ID": "ACC_SMURF_MULE_15_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000179",
+        "Account_ID": "ACC_SMURF_MULE_15_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000180",
+        "Account_ID": "ACC_SMURF_MULE_16_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000181",
+        "Account_ID": "ACC_SMURF_MULE_16_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000182",
+        "Account_ID": "ACC_SMURF_MULE_16_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000183",
+        "Account_ID": "ACC_SMURF_MULE_16_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000184",
+        "Account_ID": "ACC_SMURF_MULE_16_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000185",
+        "Account_ID": "ACC_SMURF_MULE_17_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000186",
+        "Account_ID": "ACC_SMURF_MULE_17_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000187",
+        "Account_ID": "ACC_SMURF_MULE_17_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000188",
+        "Account_ID": "ACC_SMURF_MULE_17_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000189",
+        "Account_ID": "ACC_SMURF_MULE_17_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000190",
+        "Account_ID": "ACC_SMURF_MULE_18_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000191",
+        "Account_ID": "ACC_SMURF_MULE_18_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000192",
+        "Account_ID": "ACC_SMURF_MULE_18_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000193",
+        "Account_ID": "ACC_SMURF_MULE_18_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000194",
+        "Account_ID": "ACC_SMURF_MULE_18_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000195",
+        "Account_ID": "ACC_SMURF_MULE_19_0",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000196",
+        "Account_ID": "ACC_SMURF_MULE_19_1",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000197",
+        "Account_ID": "ACC_SMURF_MULE_19_2",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000198",
+        "Account_ID": "ACC_SMURF_MULE_19_3",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
+    },
+    {
+        "Document_ID": "DOC_000199",
+        "Account_ID": "ACC_SMURF_MULE_19_4",
+        "Document_Type": "Suspicious_Activity_Report",
+        "Raw_Text": "Recently opened account, inconsistent employment history. Activity misaligned with stated income."
     }
 ]
